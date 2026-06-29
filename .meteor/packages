@@ -1,0 +1,6 @@
+# Meteor packages used by this project, one per line.
+meteor-base@1.5.2             # Packages every Meteor app needs to have
+mongo                         # The database Meteor supports right now
+static-html                   # Define static page content in .html files
+ecmascript                    # Enable ECMAScript2015+ syntax in app code
+server-render                 # Server-side rendering hook

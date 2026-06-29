@@ -1,0 +1,17 @@
+{
+  "name": "issue-13489-repro",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^8.0.0",
+    "meteor-node-stubs": "^1.2.27"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    }
+  }
+}
