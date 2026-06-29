@@ -1,0 +1,5 @@
+meteor-base@1.5.2
+mongo
+static-html
+ecmascript
+server-render
