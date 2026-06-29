@@ -68,4 +68,25 @@ the resulting `Boilerplate` in `boilerplateByArch[arch]`. `getBoilerplateAsync` 
 the cached `boilerplate.baseData.meteorRuntimeConfig` to every request, so post-startup
 mutations of `Meteor.settings.public` are never re-encoded for new connections.
 
-<!-- AFTER-FIX evidence appended below once the fix is verified against this app. -->
+## After the fix
+
+With the fix applied to `packages/webapp/webapp_server.js` (the cached runtime config is
+refreshed from the live `Meteor.settings.public` before serving when it has changed),
+running this same app against the patched `meteor` checkout and curling a fresh client:
+
+```
+=== presence checks (after fix) ===
+fooFirst:  PRESENT
+fooSecond: PRESENT
+fooThird:  PRESENT   <-- now sent to new clients
+
+=== decoded PUBLIC_SETTINGS ===
+{
+  "fooFirst": "set-at-top-level",
+  "fooSecond": "set-in-startup",
+  "fooThird": "set-after-startup"
+}
+```
+
+`fooThird`, which is set 3 seconds after startup, now reaches newly-connecting clients —
+matching the documented behavior.
