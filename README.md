@@ -61,6 +61,35 @@ Browser probe (`http://localhost:3100/`):
 
 Verdict: **BUG: extensionless import resolved to Hello.css**
 
+## The fix
+
+`tools/isobuild/compiler-plugin.js` — `addImportExtension` now inserts each
+extension by a module-resolution rank instead of appending in scan order, so
+JavaScript-module extensions (`.js .json .mjs .cjs .jsx .ts .tsx`) are always
+tried before asset extensions like `.css`/`.html`.
+
 ## Evidence — AFTER (fix applied)
 
-_(filled in once the fix is verified — see the PR)_
+Extensions array in the served `/app/app.js` — source extensions first, assets
+after:
+
+```json
+[".js", ".json", ".mjs", ".ts", ".tsx", ".html", ".d.ts", ".d.ts.map", ".css"]
+```
+
+Browser probe (`http://localhost:3100/`):
+
+```json
+{
+  "helloExportType": "function",
+  "moduleKeys": ["Hello"],
+  "resolvedTo": "Hello.tsx (correct)"
+}
+```
+
+Verdict: **OK: extensionless import resolved to Hello.tsx**
+
+An explicit `import './Foo.css'` and a `.css`-only import still resolve to the
+stylesheet (exact matches / `.css` is still in the list, just last). Both
+`modules - test modern app` and `modules - test legacy app` self-tests pass with
+the fix.
