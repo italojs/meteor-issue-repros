@@ -80,6 +80,66 @@ Browser (`http://localhost:3100/`) global probe:
 
 `window.require` is present as an own property of the global object -> **leak confirmed.**
 
+## The fix
+
+`tools/isobuild/linker.js` — the unwrapped client app bundle now wraps only the
+module-system bootstrap (`var require = meteorInstall(...)` and the eager
+`require(...)` calls) in an IIFE, while bare `/client/compatibility` files stay
+at the top level:
+
+```js
+// bare files stay global (top level)
+(function () {
+  var require = meteorInstall({ /* module tree */ });
+  require("/client/main.js");
+}).call(this);
+```
+
 ## Evidence — AFTER (fix applied)
 
-_(filled in once the fix is verified — see the PR)_
+Served `/app/app.js`:
+
+```js
+(function () {
+var require = meteorInstall({"client":{"main.js":function module(require,exports,module){
+  ...
+}}}, { ... });
+
+require("/client/main.js");
+}).call(this);
+```
+
+Browser global probe (`http://localhost:3100/`):
+
+```json
+{
+  "windowRequire": "undefined",
+  "hasOwnRequire": false,
+  "globalThisRequire": "undefined",
+  "windowExports": "undefined"
+}
+```
+
+And a real top-level classic `<script>` injected on the page now sees
+`typeof require === "undefined"` (the `let`-only approach would not — a
+top-level `let` is still a global lexical binding visible to sibling scripts).
+`window.meteorInstall` stays a function (that global is intentional and is not
+part of this bug); the app renders normally.
+
+### Bare `/client/compatibility` files still work
+
+With `meteor.mainModule.client` removed so an eager bare file is included, a
+`client/compatibility/legacy-global.js` containing `var LEGACY_COMPAT_GLOBAL =
+'i-am-global'` is emitted **outside** the IIFE, and `window.LEGACY_COMPAT_GLOBAL
+=== 'i-am-global'` while `window.require` stays `undefined`.
+
+### Self-tests
+
+Both module self-tests pass against the checkout with the fix (each asserts
+`SERVER FAILURES: 0` / `CLIENT FAILURES: 0`, and includes a
+`client/compatibility` bare-file assertion and many `require(...)` calls):
+
+```
+modules - test modern app ... ✓ ok!
+modules - test legacy app  ... ✓ ok!
+```
