@@ -1,18 +1,57 @@
-# meteor-issue-repros
+# Repro — meteor/meteor#12421
 
-Reproduções mínimas de issues do [meteor/meteor](https://github.com/meteor/meteor).
+**iOS Mobile Safari's version is parsed from the (stale) Safari `Version/` token
+instead of the iOS OS version, so iOS 10.3.x devices are wrongly served the
+legacy bundle.**
 
-**Uma branch por issue** — `issue-<num>`. A `main` é só este índice.
+Upstream issue: https://github.com/meteor/meteor/issues/12421
 
-| Issue | Branch | PR |
-|-------|--------|----|
-| [#13489](https://github.com/meteor/meteor/issues/13489) — `Meteor.settings.public` runtime updates not sent to new clients | [`issue-13489`](https://github.com/italojs/meteor-issue-repros/tree/issue-13489) | [italojs/meteor-italo-private#20](https://github.com/italojs/meteor-italo-private/pull/20) |
-| [#13490](https://github.com/meteor/meteor/issues/13490) — SIGTERM listener leaks dev server instances | [`issue-13490`](https://github.com/italojs/meteor-issue-repros/tree/issue-13490) | [italojs/meteor-italo-private#21](https://github.com/italojs/meteor-italo-private/pull/21) |
-| [#12759](https://github.com/meteor/meteor/issues/12759) — client leaks a global `require` | [`issue-12759`](https://github.com/italojs/meteor-issue-repros/tree/issue-12759) | [italojs/meteor-italo-private#22](https://github.com/italojs/meteor-italo-private/pull/22) |
-| [#12718](https://github.com/meteor/meteor/issues/12718) — extensionless import resolves `.css` over `.tsx` | [`issue-12718`](https://github.com/italojs/meteor-issue-repros/tree/issue-12718) | [italojs/meteor-italo-private#23](https://github.com/italojs/meteor-italo-private/pull/23) |
-| [#13245](https://github.com/meteor/meteor/issues/13245) — minify stats parse failure aborts the production build | [`issue-13245`](https://github.com/italojs/meteor-issue-repros/tree/issue-13245) | [italojs/meteor-italo-private#24](https://github.com/italojs/meteor-italo-private/pull/24) |
-| [#12164](https://github.com/meteor/meteor/issues/12164) — wrong error importing a missing file from an installed package | [`issue-12164`](https://github.com/italojs/meteor-issue-repros/tree/issue-12164) | [italojs/meteor-italo-private#25](https://github.com/italojs/meteor-italo-private/pull/25) |
-| [#12029](https://github.com/meteor/meteor/issues/12029) — native driver ObjectId unusable on the client | [`issue-12029`](https://github.com/italojs/meteor-issue-repros/tree/issue-12029) | [italojs/meteor-italo-private#26](https://github.com/italojs/meteor-italo-private/pull/26) |
-| [#12688](https://github.com/meteor/meteor/issues/12688) — positional (`$`) projection crashes change-stream subscription | [`issue-12688`](https://github.com/italojs/meteor-issue-repros/tree/issue-12688) | [italojs/meteor-italo-private#27](https://github.com/italojs/meteor-italo-private/pull/27) |
-| [#12172](https://github.com/meteor/meteor/issues/12172) — installer creates `~/.bash_profile`, shadowing `~/.profile` | [`issue-12172`](https://github.com/italojs/meteor-issue-repros/tree/issue-12172) | [italojs/meteor-italo-private#28](https://github.com/italojs/meteor-italo-private/pull/28) |
-| [#13276](https://github.com/meteor/meteor/issues/13276) — build crashes (`ERR_FS_FILE_TOO_LARGE`) on >2 GiB bundle files | [`issue-13276`](https://github.com/italojs/meteor-issue-repros/tree/issue-13276) | [italojs/meteor-italo-private#29](https://github.com/italojs/meteor-italo-private/pull/29) |
+## Root cause
+
+`WebAppInternals.identifyBrowser` (`packages/webapp/webapp_server.js`) takes the
+browser version straight from the useragent library:
+
+```js
+var userAgent = lookupUserAgent(userAgentString);
+return { name: camelCase(userAgent.family), major: +userAgent.major, minor: +userAgent.minor, patch: +userAgent.patch };
+```
+
+For an iOS Mobile Safari UA the library reports the Safari `Version/` token
+(e.g. `Version/10.0` → `10.0.0`), **not** the iOS OS version (`OS 10_3_1` →
+`10.3.1`). The modern minimum for `mobile_safari` is `[10, 3]`
+(`npm-packages/babel-preset-meteor/modern.js`), so `isModern([10,0,0])` is
+`false` and an iOS 10.3.x device — which is modern — is served the **legacy**
+bundle.
+
+## Reproduce
+
+```bash
+npm install     # useragent-ng@2.4.4, the version Meteor pins
+node repro.js
+```
+
+[`repro.js`](repro.js) uses the real `useragent-ng` and replicates
+`identifyBrowser` (current vs. fixed) and modern-browsers' `isModern` comparison.
+
+## Evidence — BEFORE / AFTER
+
+```
+iOS 10.3.1 (should be MODERN)
+  useragent-ng: browser 10.0.0, os iOS 10.3.1
+  BEFORE identifyBrowser -> 10.0.0  isModern=false     <- BUG (served legacy)
+  AFTER  identifyBrowser -> 10.3.1  isModern=true       <- fixed (modern)
+
+iOS 15.4 (should be MODERN)
+  BEFORE -> 15.4.0 isModern=true ; AFTER -> 15.4.0 isModern=true   (no regression)
+
+iOS 9.3 (should be LEGACY)
+  BEFORE -> 9.0.0 isModern=false ; AFTER -> 9.3.0 isModern=false   (stays legacy)
+```
+
+## The fix
+
+`identifyBrowser` — for iOS Mobile Safari, use the OS version (`userAgent.os`)
+for major/minor/patch, since iOS Safari's effective version tracks the OS. This
+promotes iOS 10.3.x to modern (and gives WKWebViews their real iOS version
+instead of `0.0.0`), is a no-op for modern iOS, and does not over-promote older
+iOS. Tinytest cases are added in `packages/webapp/webapp_tests.js`.

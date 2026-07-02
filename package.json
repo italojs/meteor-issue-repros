@@ -1,0 +1,6 @@
+{
+  "name": "meteor-issue-12421-repro",
+  "private": true,
+  "scripts": { "repro": "node repro.js" },
+  "dependencies": { "useragent-ng": "2.4.4" }
+}
