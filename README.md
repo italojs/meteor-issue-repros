@@ -1,15 +1,58 @@
-# meteor-issue-repros
+# Repro — meteor/meteor#12688
 
-Reproduções mínimas de issues do [meteor/meteor](https://github.com/meteor/meteor).
+**A publication using a positional (`$`) field projection crashes the whole
+subscription on Meteor 3.5 (Change Streams), instead of falling back to polling.**
 
-**Uma branch por issue** — `issue-<num>`. A `main` é só este índice.
+Upstream issue: https://github.com/meteor/meteor/issues/12688
 
-| Issue | Branch | PR |
-|-------|--------|----|
-| [#13489](https://github.com/meteor/meteor/issues/13489) — `Meteor.settings.public` runtime updates not sent to new clients | [`issue-13489`](https://github.com/italojs/meteor-issue-repros/tree/issue-13489) | [italojs/meteor-italo-private#20](https://github.com/italojs/meteor-italo-private/pull/20) |
-| [#13490](https://github.com/meteor/meteor/issues/13490) — SIGTERM listener leaks dev server instances | [`issue-13490`](https://github.com/italojs/meteor-issue-repros/tree/issue-13490) | [italojs/meteor-italo-private#21](https://github.com/italojs/meteor-italo-private/pull/21) |
-| [#12759](https://github.com/meteor/meteor/issues/12759) — client leaks a global `require` | [`issue-12759`](https://github.com/italojs/meteor-issue-repros/tree/issue-12759) | [italojs/meteor-italo-private#22](https://github.com/italojs/meteor-italo-private/pull/22) |
-| [#12718](https://github.com/meteor/meteor/issues/12718) — extensionless import resolves `.css` over `.tsx` | [`issue-12718`](https://github.com/italojs/meteor-issue-repros/tree/issue-12718) | [italojs/meteor-italo-private#23](https://github.com/italojs/meteor-italo-private/pull/23) |
-| [#13245](https://github.com/meteor/meteor/issues/13245) — minify stats parse failure aborts the production build | [`issue-13245`](https://github.com/italojs/meteor-issue-repros/tree/issue-13245) | [italojs/meteor-italo-private#24](https://github.com/italojs/meteor-italo-private/pull/24) |
-| [#12164](https://github.com/meteor/meteor/issues/12164) — wrong error importing a missing file from an installed package | [`issue-12164`](https://github.com/italojs/meteor-issue-repros/tree/issue-12164) | [italojs/meteor-italo-private#25](https://github.com/italojs/meteor-italo-private/pull/25) |
-| [#12029](https://github.com/meteor/meteor/issues/12029) — native driver ObjectId unusable on the client | [`issue-12029`](https://github.com/italojs/meteor-issue-repros/tree/issue-12029) | [italojs/meteor-italo-private#26](https://github.com/italojs/meteor-italo-private/pull/26) |
+## Root cause
+
+On Meteor 3.5 the default reactivity order is `['changeStreams', 'oplog',
+'polling']` (`packages/mongo/mongo_connection.js`). The Change Streams
+availability check validates `skip`/`limit` and the selector, but **not** the
+projection. So for `{ fields: { 'myArray.$': 1 } }` it reports Change Streams as
+available, `ChangeStreamObserveDriver` is constructed, and its constructor calls
+`LocalCollection._compileProjection(projection)` which **throws**
+`MinimongoError: Minimongo doesn't support $ operator in projections yet` — the
+subscription errors out and never becomes ready.
+
+The **oplog** driver already guards this: `OplogObserveDriver.cursorSupported`
+(`packages/mongo/oplog_observe_driver.js`) runs `_checkSupportedProjection` and
+returns `false` for `$` projections, so selection falls through to polling
+(which projects server-side in MongoDB and works). The Change Streams path is
+missing the equivalent guard.
+
+## App
+
+[`app/`](app/) is `meteor create --minimal` + `meteor add mongo` (no rspack; the
+bug is in server-side driver selection). [`server/main.js`](app/server/main.js)
+publishes `Things.find({ 'myArray.foo': 1 }, { fields: { 'myArray.$': 1 } })`;
+[`client/main.js`](app/client/main.js) subscribes and reports readiness.
+
+## Reproduce
+
+```bash
+cd app && meteor run    # dev_bundle Mongo runs as a replica set → Change Streams
+# open http://localhost:3100/
+```
+
+## Evidence — BEFORE (bug, on `devel` @ fe7d26b0f9)
+
+Server log:
+
+```
+Exception from sub positional id ... MinimongoError: Minimongo doesn't support $ operator in projections yet.
+    at LocalCollection._checkSupportedProjection (packages/minimongo/local_collection.js:1127:23)
+    at LocalCollection._compileProjection (packages/minimongo/local_collection.js:1161:19)
+```
+
+Client verdict:
+
+```
+BUG: subscription not ready (error: Internal server error)
+{ "ready": false, "error": "Internal server error", "doc": null }
+```
+
+## Evidence — AFTER (fix)
+
+_(filled in once the fix is verified — see the PR)_
