@@ -1,0 +1,10 @@
+{
+  "name": "meteor-issue-13245-repro",
+  "private": true,
+  "description": "Repro for meteor/meteor#13245 — minify stats parser breaks the production build",
+  "scripts": { "repro": "node repro.js" },
+  "dependencies": {
+    "acorn": "8.10.0",
+    "@babel/parser": "7.29.7"
+  }
+}
