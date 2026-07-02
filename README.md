@@ -49,6 +49,29 @@ cd app && meteor run
 
 Verdict: **BUG: client cannot recover the ObjectId (keys=["buffer"], hex=null)**
 
+## The fix
+
+`packages/mongo/mongo_common.js` (server-only) teaches EJSON to serialize a
+native driver ObjectId as the same `oid` type used by `Mongo.ObjectID`, so it
+round-trips to a `Mongo.ObjectID` on the client. A Tinytest is added in
+`packages/mongo/tests/collection_tests.js`.
+
 ## Evidence — AFTER (fix)
 
-_(filled in once the fix is verified — see the PR)_
+The method's native ObjectId now arrives as a usable `Mongo.ObjectID`
+(`clientKeys: ["_str"]`, `clientHex === serverHex`):
+
+```json
+{
+  "serverConstructor": "ObjectId",
+  "clientKeys": ["_str"],
+  "clientHex": "6a46cf5c3fcf361416cfa337",
+  "roundTrips": true
+}
+```
+
+Verdict: **OK: client received a usable ObjectId (…)**
+
+Regression: a normal `Mongo.ObjectID` from `find()` still round-trips
+(`OK (regression): find() ObjectID round-trips (…)`) — the fix only affects
+native ObjectIds, which were previously unusable anyway.

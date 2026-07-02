@@ -38,4 +38,24 @@ Meteor.startup(() => {
         ")";
     document.body.appendChild(verdict);
   });
+
+  // Regression: a normal Mongo.ObjectID from find() must still round-trip.
+  Meteor.call("getFindOid", (err, res) => {
+    const id = res && res.id;
+    const clientHex = id && (id._str || (id.toHexString && id.toHexString()));
+    const probe = {
+      serverConstructor: res && res.idConstructor,
+      serverHex: res && res.idHex,
+      clientHex: clientHex || null,
+      roundTrips: !!clientHex && clientHex === (res && res.idHex),
+    };
+    // eslint-disable-next-line no-console
+    console.log("[find-oid-probe]", JSON.stringify(probe));
+    const el = document.createElement("div");
+    el.id = "find-oid-verdict";
+    el.textContent = probe.roundTrips
+      ? "OK (regression): find() ObjectID round-trips (" + probe.clientHex + ")"
+      : "REGRESSION: find() ObjectID broken (" + JSON.stringify(probe) + ")";
+    document.body.appendChild(el);
+  });
 });
