@@ -1,13 +1,54 @@
-# meteor-issue-repros
+# Repro — meteor/meteor#12164
 
-Reproduções mínimas de issues do [meteor/meteor](https://github.com/meteor/meteor).
+**Importing a non-existent file from an *installed* Meteor package reports the
+wrong error: "Cannot find package X" instead of "the module is missing".**
 
-**Uma branch por issue** — `issue-<num>`. A `main` é só este índice.
+Upstream issue: https://github.com/meteor/meteor/issues/12164
 
-| Issue | Branch | PR |
-|-------|--------|----|
-| [#13489](https://github.com/meteor/meteor/issues/13489) — `Meteor.settings.public` runtime updates not sent to new clients | [`issue-13489`](https://github.com/italojs/meteor-issue-repros/tree/issue-13489) | [italojs/meteor-italo-private#20](https://github.com/italojs/meteor-italo-private/pull/20) |
-| [#13490](https://github.com/meteor/meteor/issues/13490) — SIGTERM listener leaks dev server instances | [`issue-13490`](https://github.com/italojs/meteor-issue-repros/tree/issue-13490) | [italojs/meteor-italo-private#21](https://github.com/italojs/meteor-italo-private/pull/21) |
-| [#12759](https://github.com/meteor/meteor/issues/12759) — client leaks a global `require` | [`issue-12759`](https://github.com/italojs/meteor-issue-repros/tree/issue-12759) | [italojs/meteor-italo-private#22](https://github.com/italojs/meteor-italo-private/pull/22) |
-| [#12718](https://github.com/meteor/meteor/issues/12718) — extensionless import resolves `.css` over `.tsx` | [`issue-12718`](https://github.com/italojs/meteor-issue-repros/tree/issue-12718) | [italojs/meteor-italo-private#23](https://github.com/italojs/meteor-italo-private/pull/23) |
-| [#13245](https://github.com/meteor/meteor/issues/13245) — minify stats parse failure aborts the production build | [`issue-13245`](https://github.com/italojs/meteor-issue-repros/tree/issue-13245) | [italojs/meteor-italo-private#24](https://github.com/italojs/meteor-italo-private/pull/24) |
+## Root cause
+
+`packages/modules-runtime/errors/cannotFindMeteorPackage.js` (used on the
+client) and the inline copy in `packages/modules-runtime/server.js` both do:
+
+```js
+var packageName = id.split('/', 2)[1];
+throw new Error(`Cannot find package "${packageName}". Try "meteor add ${packageName}".`);
+```
+
+So for `import 'meteor/mongo/x'` — where the package `mongo` IS installed but the
+file `x` is not — the error claims the *package* is missing and tells you to
+`meteor add mongo` (which is already added). The package name is taken from the
+id regardless of whether the id points at a sub-module of an installed package.
+
+## App
+
+[`app/`](app/) is `meteor create --minimal`. Its [`server/main.js`](app/server/main.js)
+imports a file that does not exist inside the (always-installed) `meteor`
+package:
+
+```js
+import 'meteor/meteor/this-file-does-not-exist';
+```
+
+## Reproduce
+
+```bash
+cd app
+meteor run
+```
+
+## Evidence — BEFORE (bug, on `devel` @ ebbdd065dd)
+
+The server crashes at startup with a misleading message — `meteor` is a core
+package that can't be "added":
+
+```
+Error: Cannot find package "meteor". Try "meteor add meteor".
+    at makeInstallerOptions.fallback (packages/modules-runtime.js:704:13)
+    ...
+    at module (server/main.js:1:1)
+```
+
+## Evidence — AFTER (fix)
+
+_(filled in once the fix is verified — see the PR)_
