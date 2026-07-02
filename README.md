@@ -1,16 +1,60 @@
-# meteor-issue-repros
+# Repro — meteor/meteor#12172
 
-Reproduções mínimas de issues do [meteor/meteor](https://github.com/meteor/meteor).
+**The Meteor installer creates `~/.bash_profile` when it's absent, which makes a
+bash login shell stop sourcing the user's existing `~/.profile`.**
 
-**Uma branch por issue** — `issue-<num>`. A `main` é só este índice.
+Upstream issue: https://github.com/meteor/meteor/issues/12172
 
-| Issue | Branch | PR |
-|-------|--------|----|
-| [#13489](https://github.com/meteor/meteor/issues/13489) — `Meteor.settings.public` runtime updates not sent to new clients | [`issue-13489`](https://github.com/italojs/meteor-issue-repros/tree/issue-13489) | [italojs/meteor-italo-private#20](https://github.com/italojs/meteor-italo-private/pull/20) |
-| [#13490](https://github.com/meteor/meteor/issues/13490) — SIGTERM listener leaks dev server instances | [`issue-13490`](https://github.com/italojs/meteor-issue-repros/tree/issue-13490) | [italojs/meteor-italo-private#21](https://github.com/italojs/meteor-italo-private/pull/21) |
-| [#12759](https://github.com/meteor/meteor/issues/12759) — client leaks a global `require` | [`issue-12759`](https://github.com/italojs/meteor-issue-repros/tree/issue-12759) | [italojs/meteor-italo-private#22](https://github.com/italojs/meteor-italo-private/pull/22) |
-| [#12718](https://github.com/meteor/meteor/issues/12718) — extensionless import resolves `.css` over `.tsx` | [`issue-12718`](https://github.com/italojs/meteor-issue-repros/tree/issue-12718) | [italojs/meteor-italo-private#23](https://github.com/italojs/meteor-italo-private/pull/23) |
-| [#13245](https://github.com/meteor/meteor/issues/13245) — minify stats parse failure aborts the production build | [`issue-13245`](https://github.com/italojs/meteor-issue-repros/tree/issue-13245) | [italojs/meteor-italo-private#24](https://github.com/italojs/meteor-italo-private/pull/24) |
-| [#12164](https://github.com/meteor/meteor/issues/12164) — wrong error importing a missing file from an installed package | [`issue-12164`](https://github.com/italojs/meteor-issue-repros/tree/issue-12164) | [italojs/meteor-italo-private#25](https://github.com/italojs/meteor-italo-private/pull/25) |
-| [#12029](https://github.com/meteor/meteor/issues/12029) — native driver ObjectId unusable on the client | [`issue-12029`](https://github.com/italojs/meteor-issue-repros/tree/issue-12029) | [italojs/meteor-italo-private#26](https://github.com/italojs/meteor-italo-private/pull/26) |
-| [#12688](https://github.com/meteor/meteor/issues/12688) — positional (`$`) projection crashes change-stream subscription | [`issue-12688`](https://github.com/italojs/meteor-issue-repros/tree/issue-12688) | [italojs/meteor-italo-private#27](https://github.com/italojs/meteor-italo-private/pull/27) |
+## Root cause
+
+`npm-packages/meteor-installer/install.js` → `setupExecPath()`, for non-zsh
+shells, does:
+
+```js
+await appendPathToFile('.bashrc');
+await appendPathToFile('.bash_profile');   // fs.appendFile CREATES it if absent
+```
+
+A bash **login** shell reads the *first* it finds of `~/.bash_profile`,
+`~/.bash_login`, `~/.profile`. Many users keep their PATH/env in `~/.profile`
+and have no `~/.bash_profile`. By creating `~/.bash_profile` (containing only the
+Meteor PATH line), the installer makes bash source that instead of `~/.profile`,
+silently dropping whatever the user configured there.
+
+## Reproduce
+
+```bash
+node repro.js
+```
+
+[`repro.js`](repro.js) replicates the installer's exact `appendFile` behavior
+against throwaway HOME directories (a user with `~/.profile` and no
+`~/.bash_profile`), for the current logic vs. the fix.
+
+## Evidence — BEFORE (bug)
+
+```
+== BEFORE (current installer logic) ==
+  .bash_profile  EXISTS  "export PATH=/Users/x/.meteor:$PATH"
+  .profile       EXISTS  "export PATH=/user/custom/bin:$PATH"
+  => bash login shell reads: ~/.bash_profile
+  => login PATH includes .meteor: true; user's ~/.profile still the login file: false
+BEFORE: created ~/.bash_profile = true => user's ~/.profile no longer sourced by bash login => BUG
+```
+
+## The fix
+
+`setupExecPath()` appends the Meteor PATH to a bash login file **only if one
+already exists** (`~/.bash_profile`, then `~/.bash_login`); otherwise it appends
+to `~/.profile` — the file bash would source anyway — instead of creating
+`~/.bash_profile` and shadowing it.
+
+## Evidence — AFTER (fix)
+
+```
+== AFTER (fixed logic) ==
+  .bash_profile  absent
+  .profile       EXISTS  "...\nexport PATH=/Users/x/.meteor:$PATH"
+  => bash login shell reads: ~/.profile
+AFTER : created ~/.bash_profile = false ; login PATH has .meteor = true ; ~/.profile still the login file = true => FIXED
+```
