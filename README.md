@@ -50,4 +50,12 @@ can't be hashed.
 
 ## Evidence — AFTER (fix)
 
-_(filled in once the fix is verified — see the PR)_
+`meteor build ./out --directory --server-only` now succeeds. The bundle is
+produced and the large asset is copied through:
+
+```
+/tmp/out/bundle/programs/server/npm/node_modules/bigasset/model.bin   (2.1G)
+```
+
+No `ERR_FS_FILE_TOO_LARGE`; smaller files still take the hash + write path (the
+build completes normally).
