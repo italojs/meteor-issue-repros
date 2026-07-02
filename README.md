@@ -49,6 +49,27 @@ Error: Cannot find package "meteor". Try "meteor add meteor".
     at module (server/main.js:1:1)
 ```
 
+## The fix
+
+`packages/modules-runtime/errors/cannotFindMeteorPackage.js` — when the id is a
+sub-module of an **installed** package, report the missing module instead of a
+missing package. `packages/modules-runtime/server.js` now uses this shared
+helper instead of an inline duplicate (so client and server behave the same).
+
 ## Evidence — AFTER (fix)
 
-_(filled in once the fix is verified — see the PR)_
+The server now reports the missing **module**, and notes the package is
+installed:
+
+```
+Error: Cannot find module "meteor/meteor/this-file-does-not-exist". The package "meteor" is installed but does not provide that module.
+```
+
+A genuinely missing package still reports the old, correct message (verified by
+swapping the import to `meteor/totally-fake-package`):
+
+```
+Error: Cannot find package "totally-fake-package". Try "meteor add totally-fake-package".
+```
+
+A Tinytest for the new case is added in `packages/modules-runtime/modules-runtime-tests.js`.
