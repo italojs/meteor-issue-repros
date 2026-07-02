@@ -53,6 +53,29 @@ BUG: subscription not ready (error: Internal server error)
 { "ready": false, "error": "Internal server error", "doc": null }
 ```
 
+## The fix
+
+`packages/mongo/mongo_connection.js` — the Change Streams availability check now
+runs `LocalCollection._checkSupportedProjection` on the cursor.s projection
+(mirroring `OplogObserveDriver.cursorSupported`). For an unsupported (`$`)
+projection it reports Change Streams as unavailable, so selection falls through
+to polling. A Tinytest is added in
+`packages/mongo/tests/changestream_observe_driver_tests.js`.
+
 ## Evidence — AFTER (fix)
 
-_(filled in once the fix is verified — see the PR)_
+No server exception. Client:
+
+```json
+{
+  "ready": true,
+  "error": null,
+  "doc": { "_id": "doc1", "myArray": [ { "foo": 1, "val": "a" } ] },
+  "changedVal": "[{\"foo\":1,\"val\":\"x...\"}]"
+}
+```
+
+Verdict: **OK: subscription ready** — the positional projection returns only the
+matched element (`myArray: [{foo:1,val:'a'}]`), served via polling, and a
+reactive update (`bump`) is delivered. Normal (non-`$`) projections still use
+Change Streams (the guard only triggers when the projection cannot be compiled).
