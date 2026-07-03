@@ -1,25 +1,29 @@
-# meteor-issue-repros
+# meteor/meteor#11808 — installer should repair PATH even if Meteor is already installed
 
-Reproduções mínimas de issues do [meteor/meteor](https://github.com/meteor/meteor).
+Re-running `npx meteor install` (or the installer binary) when Meteor is already installed just prints
+"Meteor is already installed" and exits — so if the user's shell `PATH` is missing `~/.meteor`, there
+is no way to fix it via the installer. Additionally, `setupExecPath` appended `export PATH=...` to the
+shell rc file unconditionally, so repeated installs could add duplicate lines.
 
-**Uma branch por issue** — `issue-<num>`. A `main` é só este índice.
+## Root cause
+`npm-packages/meteor-installer/install.js`:
+- the `fs.existsSync(meteorPath)` branch calls `process.exit()` without ever calling `setupExecPath()`;
+- `setupExecPath` appended the export line with no "already present" check.
 
-| Issue | Branch | PR |
-|-------|--------|----|
-| [#13489](https://github.com/meteor/meteor/issues/13489) — `Meteor.settings.public` runtime updates not sent to new clients | [`issue-13489`](https://github.com/italojs/meteor-issue-repros/tree/issue-13489) | [italojs/meteor-italo-private#20](https://github.com/italojs/meteor-italo-private/pull/20) |
-| [#13490](https://github.com/meteor/meteor/issues/13490) — SIGTERM listener leaks dev server instances | [`issue-13490`](https://github.com/italojs/meteor-issue-repros/tree/issue-13490) | [italojs/meteor-italo-private#21](https://github.com/italojs/meteor-italo-private/pull/21) |
-| [#12759](https://github.com/meteor/meteor/issues/12759) — client leaks a global `require` | [`issue-12759`](https://github.com/italojs/meteor-issue-repros/tree/issue-12759) | [italojs/meteor-italo-private#22](https://github.com/italojs/meteor-italo-private/pull/22) |
-| [#12718](https://github.com/meteor/meteor/issues/12718) — extensionless import resolves `.css` over `.tsx` | [`issue-12718`](https://github.com/italojs/meteor-issue-repros/tree/issue-12718) | [italojs/meteor-italo-private#23](https://github.com/italojs/meteor-italo-private/pull/23) |
-| [#13245](https://github.com/meteor/meteor/issues/13245) — minify stats parse failure aborts the production build | [`issue-13245`](https://github.com/italojs/meteor-issue-repros/tree/issue-13245) | [italojs/meteor-italo-private#24](https://github.com/italojs/meteor-italo-private/pull/24) |
-| [#12164](https://github.com/meteor/meteor/issues/12164) — wrong error importing a missing file from an installed package | [`issue-12164`](https://github.com/italojs/meteor-issue-repros/tree/issue-12164) | [italojs/meteor-italo-private#25](https://github.com/italojs/meteor-italo-private/pull/25) |
-| [#12029](https://github.com/meteor/meteor/issues/12029) — native driver ObjectId unusable on the client | [`issue-12029`](https://github.com/italojs/meteor-issue-repros/tree/issue-12029) | [italojs/meteor-italo-private#26](https://github.com/italojs/meteor-italo-private/pull/26) |
-| [#12688](https://github.com/meteor/meteor/issues/12688) — positional (`$`) projection crashes change-stream subscription | [`issue-12688`](https://github.com/italojs/meteor-issue-repros/tree/issue-12688) | [italojs/meteor-italo-private#27](https://github.com/italojs/meteor-italo-private/pull/27) |
-| [#12172](https://github.com/meteor/meteor/issues/12172) — installer creates `~/.bash_profile`, shadowing `~/.profile` | [`issue-12172`](https://github.com/italojs/meteor-issue-repros/tree/issue-12172) | [italojs/meteor-italo-private#28](https://github.com/italojs/meteor-italo-private/pull/28) |
-| [#13276](https://github.com/meteor/meteor/issues/13276) — build crashes (`ERR_FS_FILE_TOO_LARGE`) on >2 GiB bundle files | [`issue-13276`](https://github.com/italojs/meteor-issue-repros/tree/issue-13276) | [italojs/meteor-italo-private#29](https://github.com/italojs/meteor-italo-private/pull/29) |
-| [#12421](https://github.com/meteor/meteor/issues/12421) — iOS Safari version parsed from Safari token → wrong legacy bundle | [`issue-12421`](https://github.com/italojs/meteor-issue-repros/tree/issue-12421) | [italojs/meteor-italo-private#30](https://github.com/italojs/meteor-italo-private/pull/30) |
+## Fix
+- On the already-installed path, when `shouldSetupExecPath()` and `~/.meteor` is not on `process.env.PATH`, call `setupExecPath()` (now idempotent) and tell the user to open a new terminal.
+- `setupExecPath` uses `appendLineIfMissing`, skipping the write when the export line is already in the rc file. The PATH check and idempotent append are extracted to `exec-path.js` and unit-tested.
 
-- [#11918](https://github.com/meteor/meteor/issues/11918) — RangeError reading unibuild resource at offset — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-11918) — PR italojs/meteor-italo-private#42
+## Reproduce
+`node repro.js` demonstrates the two behaviors:
+```
+meteor already on a good PATH?  true (no repair needed)
+meteor missing from PATH?       true (repair triggers)
+first append wrote line?        true
+second append skipped (idemp)?  true
+line count in rc:               1 (exactly 1)
+```
+End-to-end: with Meteor installed but `~/.meteor` removed from your shell PATH, re-running the installer
+now appends the export (once) and prints the "open a new terminal" note instead of doing nothing.
 
-- [#12772](https://github.com/meteor/meteor/issues/12772) — no Content-Length on built JS/CSS — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-12772) — PR italojs/meteor-italo-private#43
-
-- [#13653](https://github.com/meteor/meteor/issues/13653) — infinite reload loop with cross-origin DDP_DEFAULT_CONNECTION_URL — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-13653) — PR italojs/meteor-italo-private#44
+Covered by `npm-packages/meteor-installer/exec-path.test.js` (`node --test`).
