@@ -23,3 +23,5 @@ Reproduções mínimas de issues do [meteor/meteor](https://github.com/meteor/me
 - [#12772](https://github.com/meteor/meteor/issues/12772) — no Content-Length on built JS/CSS — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-12772) — PR italojs/meteor-italo-private#43
 
 - [#13653](https://github.com/meteor/meteor/issues/13653) — infinite reload loop with cross-origin DDP_DEFAULT_CONNECTION_URL — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-13653) — PR italojs/meteor-italo-private#44
+
+- [#11808](https://github.com/meteor/meteor/issues/11808) — installer should repair PATH when already installed — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-11808) — PR italojs/meteor-italo-private#45
