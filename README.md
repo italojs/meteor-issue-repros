@@ -25,3 +25,5 @@ Reproduções mínimas de issues do [meteor/meteor](https://github.com/meteor/me
 - [#13653](https://github.com/meteor/meteor/issues/13653) — infinite reload loop with cross-origin DDP_DEFAULT_CONNECTION_URL — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-13653) — PR italojs/meteor-italo-private#44
 
 - [#11808](https://github.com/meteor/meteor/issues/11808) — installer should repair PATH when already installed — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-11808) — PR italojs/meteor-italo-private#45
+
+- [#14594](https://github.com/meteor/meteor/issues/14594) — Invalid URL crashes the server via the SockJS transport — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-14594) — PR italojs/meteor-italo-private#46
