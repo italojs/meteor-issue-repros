@@ -1,27 +1,98 @@
-# meteor-issue-repros
+# meteor/meteor#14594 — Invalid URL crashes the server via the SockJS transport
 
-Reproduções mínimas de issues do [meteor/meteor](https://github.com/meteor/meteor).
+**Issue:** https://github.com/meteor/meteor/issues/14594
+**Affected:** `packages/ddp-server/transports/sockjs.js` (Meteor 3.5.0 / ddp-server 3.3.0)
+**Status:** ✅ reproduced — a malformed request URL takes the whole server process down.
 
-**Uma branch por issue** — `issue-<num>`. A `main` é só este índice.
+## Summary
 
-| Issue | Branch | PR |
-|-------|--------|----|
-| [#13489](https://github.com/meteor/meteor/issues/13489) — `Meteor.settings.public` runtime updates not sent to new clients | [`issue-13489`](https://github.com/italojs/meteor-issue-repros/tree/issue-13489) | [italojs/meteor-italo-private#20](https://github.com/italojs/meteor-italo-private/pull/20) |
-| [#13490](https://github.com/meteor/meteor/issues/13490) — SIGTERM listener leaks dev server instances | [`issue-13490`](https://github.com/italojs/meteor-issue-repros/tree/issue-13490) | [italojs/meteor-italo-private#21](https://github.com/italojs/meteor-italo-private/pull/21) |
-| [#12759](https://github.com/meteor/meteor/issues/12759) — client leaks a global `require` | [`issue-12759`](https://github.com/italojs/meteor-issue-repros/tree/issue-12759) | [italojs/meteor-italo-private#22](https://github.com/italojs/meteor-italo-private/pull/22) |
-| [#12718](https://github.com/meteor/meteor/issues/12718) — extensionless import resolves `.css` over `.tsx` | [`issue-12718`](https://github.com/italojs/meteor-issue-repros/tree/issue-12718) | [italojs/meteor-italo-private#23](https://github.com/italojs/meteor-italo-private/pull/23) |
-| [#13245](https://github.com/meteor/meteor/issues/13245) — minify stats parse failure aborts the production build | [`issue-13245`](https://github.com/italojs/meteor-issue-repros/tree/issue-13245) | [italojs/meteor-italo-private#24](https://github.com/italojs/meteor-italo-private/pull/24) |
-| [#12164](https://github.com/meteor/meteor/issues/12164) — wrong error importing a missing file from an installed package | [`issue-12164`](https://github.com/italojs/meteor-issue-repros/tree/issue-12164) | [italojs/meteor-italo-private#25](https://github.com/italojs/meteor-italo-private/pull/25) |
-| [#12029](https://github.com/meteor/meteor/issues/12029) — native driver ObjectId unusable on the client | [`issue-12029`](https://github.com/italojs/meteor-issue-repros/tree/issue-12029) | [italojs/meteor-italo-private#26](https://github.com/italojs/meteor-italo-private/pull/26) |
-| [#12688](https://github.com/meteor/meteor/issues/12688) — positional (`$`) projection crashes change-stream subscription | [`issue-12688`](https://github.com/italojs/meteor-issue-repros/tree/issue-12688) | [italojs/meteor-italo-private#27](https://github.com/italojs/meteor-italo-private/pull/27) |
-| [#12172](https://github.com/meteor/meteor/issues/12172) — installer creates `~/.bash_profile`, shadowing `~/.profile` | [`issue-12172`](https://github.com/italojs/meteor-issue-repros/tree/issue-12172) | [italojs/meteor-italo-private#28](https://github.com/italojs/meteor-italo-private/pull/28) |
-| [#13276](https://github.com/meteor/meteor/issues/13276) — build crashes (`ERR_FS_FILE_TOO_LARGE`) on >2 GiB bundle files | [`issue-13276`](https://github.com/italojs/meteor-issue-repros/tree/issue-13276) | [italojs/meteor-italo-private#29](https://github.com/italojs/meteor-italo-private/pull/29) |
-| [#12421](https://github.com/meteor/meteor/issues/12421) — iOS Safari version parsed from Safari token → wrong legacy bundle | [`issue-12421`](https://github.com/italojs/meteor-issue-repros/tree/issue-12421) | [italojs/meteor-italo-private#30](https://github.com/italojs/meteor-italo-private/pull/30) |
+Meteor's SockJS transport rewrites `/websocket` requests to `/sockjs/websocket`.
+To run *before* the connect/webapp stack, it removes every existing
+`'request'`/`'upgrade'` listener from the HTTP server and reinstalls its own
+wrapper (`redirectWebsocketEndpoint` → `newListener`). That wrapper does:
 
-- [#11918](https://github.com/meteor/meteor/issues/11918) — RangeError reading unibuild resource at offset — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-11918) — PR italojs/meteor-italo-private#42
+```js
+var parsedUrl = new URL(request.url, 'http://localhost');
+```
 
-- [#12772](https://github.com/meteor/meteor/issues/12772) — no Content-Length on built JS/CSS — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-12772) — PR italojs/meteor-italo-private#43
+`new URL()` throws `TypeError: Invalid URL` for request targets such as `//` or
+`//%5Cexample.com`. Because `newListener` is a plain `EventEmitter` listener —
+**not** connect middleware — the throw is **uncaught** and crashes the process.
 
-- [#13653](https://github.com/meteor/meteor/issues/13653) — infinite reload loop with cross-origin DDP_DEFAULT_CONNECTION_URL — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-13653) — PR italojs/meteor-italo-private#44
+Anyone can send these requests (`curl`, a crawler, a bad link), so this is an
+unauthenticated remote crash / DoS. A fresh `meteor create` app reproduces it.
 
-- [#11808](https://github.com/meteor/meteor/issues/11808) — installer should repair PATH when already installed — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-11808) — PR italojs/meteor-italo-private#45
+> Note: `packages/webapp/webapp_server.js` uses the very same
+> `new URL(request.url, 'http://localhost')` pattern, but there it runs inside a
+> connect middleware, so a throw becomes a 500 instead of crashing. Only the
+> SockJS listener crashes the process.
+
+## What's in here
+
+| File | Purpose |
+|------|---------|
+| `sockjs-redirect.js` | Standalone copy of `redirectWebsocketEndpoint`, with a `fixed` flag toggling the current devel behavior vs. the proposed try/catch fix. |
+| `repro.js` | Real `http.Server` + the sockjs listener, driven by **raw TCP** so `//` reaches the server un-normalized (browsers send it raw). |
+| `run.sh` | Runs both modes and prints exit codes. |
+
+## Reproduce
+
+```bash
+node repro.js buggy   # current devel  -> uncaught TypeError, process exits 1
+node repro.js fixed   # proposed fix   -> both requests answered, exits 0
+# or both at once:
+bash run.sh
+```
+
+No dependencies — plain Node (tested on Node v24.17.0).
+
+## Evidence
+
+### Before (current `devel` behavior) — CRASH
+
+```
+[buggy] listening on 127.0.0.1:61845
+[buggy] --> GET //
+node:internal/url:840
+      href = bindingUrl.parse(input, base, true);
+                        ^
+
+TypeError: Invalid URL
+    at new URL (node:internal/url:840:25)
+    at Server.newListener (sockjs-redirect.js:46:27)
+    at Server.emit (node:events:509:28)
+    at parserOnIncoming (node:_http_server:1226:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:125:17) {
+  code: 'ERR_INVALID_URL',
+  input: '//',
+  base: 'http://localhost'
+}
+exit code: 1
+```
+
+This matches the stack trace in the issue exactly (`new URL` →
+`Server.newListener` → `Server.emit` → `parserOnIncoming` →
+`HTTPParser.parserOnHeadersComplete`, `code: 'ERR_INVALID_URL'`, `input: '//'`).
+The second malformed URL never even runs — the first one already killed the
+process.
+
+### After (proposed fix — try/catch around the parse/rewrite) — SURVIVES
+
+```
+[fixed] listening on 127.0.0.1:61847
+[fixed] --> GET //
+[fixed] <-- HTTP/1.1 404 Not Found
+[fixed] --> GET //%5Cexample.com
+[fixed] <-- HTTP/1.1 404 Not Found
+[fixed] ✅ all 2 malformed requests handled — server still alive
+exit code: 0
+```
+
+Malformed URLs are left untouched and fall through to the normal request stack,
+which responds normally (404 here) instead of crashing.
+
+## Fix
+
+Wrap the URL parse + rewrite in `try/catch` inside `redirectWebsocketEndpoint`.
+If `request.url` can't be parsed, skip the rewrite and let the downstream
+listeners handle the request. Tracked in the PR linked from the index.
