@@ -96,3 +96,18 @@ which responds normally (404 here) instead of crashing.
 Wrap the URL parse + rewrite in `try/catch` inside `redirectWebsocketEndpoint`.
 If `request.url` can't be parsed, skip the rewrite and let the downstream
 listeners handle the request. Tracked in the PR linked from the index.
+
+### Verified against the real patched source
+
+The actual patched `redirectWebsocketEndpoint` was extracted from
+`packages/ddp-server/transports/sockjs.js` and driven through the same raw-TCP
+harness — the process survives, and the legitimate rewrite is unchanged:
+
+```
+GET //                 -> HTTP/1.1 404 Not Found      (no crash)
+GET //%5Cexample.com   -> HTTP/1.1 404 Not Found      (no crash)
+GET //\example.com     -> HTTP/1.1 404 Not Found      (no crash)
+GET /websocket         -> rewritten to /sockjs/websocket
+GET /websocket?x=1     -> rewritten to /sockjs/websocket?x=1  (query preserved)
+RESULT: server survived all malformed requests ✅
+```
