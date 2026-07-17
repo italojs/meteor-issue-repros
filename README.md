@@ -79,23 +79,27 @@ process.
 ### After (proposed fix — try/catch around the parse/rewrite) — SURVIVES
 
 ```
-[fixed] listening on 127.0.0.1:61847
+[fixed] listening on 127.0.0.1:56480
 [fixed] --> GET //
+[Meteor._debug] sockjs: could not parse request URL, skipping websocket rewrite // TypeError: Invalid URL ...
 [fixed] <-- HTTP/1.1 404 Not Found
 [fixed] --> GET //%5Cexample.com
+[Meteor._debug] sockjs: could not parse request URL, skipping websocket rewrite //%5Cexample.com TypeError: Invalid URL ...
 [fixed] <-- HTTP/1.1 404 Not Found
 [fixed] ✅ all 2 malformed requests handled — server still alive
 exit code: 0
 ```
 
-Malformed URLs are left untouched and fall through to the normal request stack,
-which responds normally (404 here) instead of crashing.
+Malformed URLs are logged via `Meteor._debug`, left untouched, and fall through
+to the normal request stack, which responds normally (404 here) instead of
+crashing.
 
 ## Fix
 
 Wrap the URL parse + rewrite in `try/catch` inside `redirectWebsocketEndpoint`.
-If `request.url` can't be parsed, skip the rewrite and let the downstream
-listeners handle the request. Tracked in the PR linked from the index.
+If `request.url` can't be parsed, log it with `Meteor._debug`, skip the rewrite,
+and let the downstream listeners handle the request. Tracked in the PR linked
+from the index.
 
 ### Verified against the real patched source
 

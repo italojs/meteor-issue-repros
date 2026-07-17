@@ -1,5 +1,9 @@
 'use strict';
 
+// In a real Meteor server, `Meteor._debug` is a global. This standalone repro
+// shims it so the file runs under plain Node and the diagnostic log is visible.
+const Meteor = { _debug: (...a) => console.error('[Meteor._debug]', ...a) };
+
 // Faithful, standalone copy of the listener-overshadowing logic that Meteor's
 // SockJS transport installs on the HTTP server:
 //   packages/ddp-server/transports/sockjs.js -> redirectWebsocketEndpoint()
@@ -37,7 +41,8 @@ function redirectWebsocketEndpoint(httpServer, pathPrefix, sockjsPrefix, opts) {
             request.url = parsedUrl.pathname + parsedUrl.search;
           }
         } catch (err) {
-          // Malformed request URL — skip the rewrite.
+          // Malformed request URL — leave request.url untouched.
+          Meteor._debug('sockjs: could not parse request URL, skipping websocket rewrite', request.url, err);
         }
       } else {
         // ==== verbatim current devel behavior ====
