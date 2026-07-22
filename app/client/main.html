@@ -1,0 +1,53 @@
+<head>
+  <title>ChangeStreamHistoryLost repro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  {{> repro}}
+</body>
+
+<template name="repro">
+  <main>
+    <h1>ChangeStreamHistoryLost restart-loop repro</h1>
+    <p>
+      Run the steps in order, then watch the <strong>server console</strong>:
+      after step 3 it should loop forever with
+      <code>ChangeStream error: ... code: 286 (ChangeStreamHistoryLost)</code>.
+    </p>
+
+    <ol>
+      <li>
+        <button class="js-insert">1. Insert quiet doc</button>
+        <span class="hint">one change event on <code>quiet</code> so the driver stores a resume token</span>
+      </li>
+      <li>
+        <button class="js-roll" disabled="{{rolling}}">2. Roll the oplog</button>
+        <span class="hint">bulk-writes to <code>noise</code> until the token falls out of the 8MB dev oplog{{#if rolling}} — running please wait about a minute...{{/if}}</span>
+      </li>
+      <li>
+        <button class="js-kill">3. Kill change-stream cursor</button>
+        <span class="hint">forces a resume with the stale token → infinite 286 loop</span>
+      </li>
+    </ol>
+
+    <p>
+      <button class="js-status">Refresh status</button>
+    </p>
+
+    {{#with status}}
+      <table>
+        <tr><td>DB</td><td>{{dbName}}</td></tr>
+        <tr><td>Observed change events</td><td>{{observedEvents}}</td></tr>
+        <tr><td>Last quiet insert (unix sec)</td><td>{{lastQuietInsertSec}}</td></tr>
+        <tr><td>Oldest oplog entry (unix sec)</td><td>{{oldestOplogSec}}</td></tr>
+        <tr><td>Resume token rolled out of oplog</td><td><strong>{{tokenRolledOut}}</strong></td></tr>
+        <tr><td>Change-stream cursors on <code>quiet</code></td><td>{{changeStreamCursors}}</td></tr>
+      </table>
+    {{/with}}
+
+    <h2>Log</h2>
+    <pre class="log">{{#each line in log}}{{line}}
+{{/each}}</pre>
+  </main>
+</template>
