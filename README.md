@@ -29,3 +29,5 @@ Reproduções mínimas de issues do [meteor/meteor](https://github.com/meteor/me
 - [#14594](https://github.com/meteor/meteor/issues/14594) — Invalid URL crashes the server via the SockJS transport — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-14594) — upstream PR meteor/meteor#14598 (private #46)
 
 - [#14604](https://github.com/meteor/meteor/issues/14604) — change-stream observe driver stuck in an infinite restart loop after ChangeStreamHistoryLost (error 286) — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-14604) — PR italojs/meteor-italo-private#48
+
+- [#14600](https://github.com/meteor/meteor/issues/14600) — change-stream fence test CI regression on release-3.5.1 (compareOperationTimes mishandles a plain `{t,i}` operand, exposed by #14564's caught-up-floor seed) — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-14600) — PR italojs/meteor-italo-private#49
