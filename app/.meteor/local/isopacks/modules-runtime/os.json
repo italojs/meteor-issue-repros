@@ -1,0 +1,99 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "meteorInstall",
+      "testOnly": false
+    },
+    {
+      "name": "verifyErrors",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/.npm/package/node_modules/install/install.js",
+      "length": 19880,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": ".npm/package/node_modules/install/install.js",
+      "hash": "29694e43b96fc9f543cb0096361e75f83d557636",
+      "fileOptions": {
+        "bare": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/errors/importsErrors.js",
+      "length": 1213,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "errors/importsErrors.js",
+      "hash": "01c9be67be03046bc308fb27f59ea43fe1cb400c",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/errors/cannotFindMeteorPackage.js",
+      "length": 324,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "errors/cannotFindMeteorPackage.js",
+      "hash": "c14cc2fe88fa40d55622b69515316395f9fb435e",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/server.js",
+      "length": 2530,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "server.js",
+      "hash": "14ef894c254a4a7a7095ffb1cdbd0fc3cc1dab14",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/profile.js",
+      "length": 223,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "profile.js",
+      "hash": "74ddcd2a798d7cc4f7cbe1ae8c9f9007936bb19e",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/verifyErrors.js",
+      "length": 635,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "verifyErrors.js",
+      "hash": "438afbd742c5a0ddaed86f3eeaae504cbc275490",
+      "fileOptions": {
+        "lazy": false
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

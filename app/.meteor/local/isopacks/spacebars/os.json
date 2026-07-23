@@ -1,0 +1,45 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "Spacebars",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "observe-sequence",
+      "constraint": "2.0.1"
+    },
+    {
+      "package": "tracker",
+      "constraint": "1.3.2"
+    },
+    {
+      "package": "htmljs",
+      "constraint": "2.0.2"
+    },
+    {
+      "package": "blaze",
+      "constraint": "3.0.3"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/spacebars-runtime.js",
+      "length": 10805,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "spacebars-runtime.js",
+      "hash": "21eb76ce202e7588b6e192a51a61d94ddd865f11",
+      "fileOptions": {
+        "lazy": false
+      }
+    }
+  ]
+}

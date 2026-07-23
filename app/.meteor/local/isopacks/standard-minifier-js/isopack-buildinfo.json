@@ -1,0 +1,2208 @@
+{
+  "builtBy": "meteor/34",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/package.js": "de5c9abd54b64f1604e620d293c220e61e8f33e7",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin/minify-js.js": "6cb87c5e1fa4c383a7ce3bec207ec8a4bcc2efac",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin/stats.js": "687b69219249337eb6fe2b510635d217776f2a7f"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin/minify-js.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin/stats.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": [
+            "plugin/"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "minify-js.js",
+            "stats.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/package.js": "de5c9abd54b64f1604e620d293c220e61e8f33e7",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin/minify-js.js": "6cb87c5e1fa4c383a7ce3bec207ec8a4bcc2efac",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin/stats.js": "687b69219249337eb6fe2b510635d217776f2a7f"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin/minify-js.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin/stats.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": [
+            "plugin/"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "minify-js.js",
+            "stats.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/package.js": "de5c9abd54b64f1604e620d293c220e61e8f33e7",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/package.js": "b0bb5b7e7b8423537582b039d52bd7fc0409e2f0",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/package-registry.js": "a793907191245fff98efb5b809e600909f94f458",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/load-js-image.js": "4c1c42c76626eff64b4801e1202e4370b2c4186d",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/.npm/package/npm-shrinkwrap.json": "e045269f89868f7a722bd973fe6d7c28f8cc0067",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/meteor.d.ts": "26da6231bf13f4e601b07120e7a02a5acd09b648",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/global.js": "3dd95fbd9353c99881ca34e04acd370f6cfc5586",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/server_environment.js": "07305a504af10e5d047b25c2788ca1afdd60afa2",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/helpers.js": "882828ad3dfa5e262ff09ba26257a6d720219fce",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/setimmediate.js": "8e17c7d4ae3622c215d875e970ad5d8eb67217d2",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/timers.js": "6ef58a232318d96812ea9418a2a107370e3323ab",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/errors.js": "3591b80cfa90fbabc2058d95aacaade99812546d",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/asl-helpers.js": "a6c7fd5c0f946a36e497c246e5791ed7af20028d",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/asynchronous_queue.js": "54fce9a4cc7ff8b6117c49a8432258bf12acfa4a",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/async_helpers.js": "c4a7fd012c9a5962bf5e4bde87d48bbcc17ba084",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/startup_server.js": "b1d8eeec5db80830e3f3f32f6a6edc8df4b33adb",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/debug.js": "a30161e87d3bbce91802b5912d949cf2b627e96f",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/deprecate.js": "f8f5cb13e5d737e35c6aa948d4e064efdbe6c4d4",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/string_utils.js": "a7490b2a8276e63e4b0b0c4b91910a2a630e93bc",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/test_environment.js": "adc54b76e8d412f77b5d55a38bec6045045442f2",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/dynamics_nodejs.js": "2efc599acae520d4325d5f84435e582aab34df63",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/url_server.js": "0547fb99c3457bf0305083117ac628369c675f25",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/url_common.js": "721a8537c4b6310e5f19d07c4ea52f9d8c2127db",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/fetch.js": "e87d4097646f40ed1ec90007f6359cd8dc7ca7f0",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/flush-buffers-on-exit-in-windows.js": "baeed30bb3e233bc2e60bc18371890152c9da108",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/emitter-promise.js": "f72d6a81e712ba783609715f9bc9cabedbff8e30",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/asl-helpers-client.js": "b02f0358aa60bb37f6288c571bec086c93b09dfd",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/bare_test_setup.js": "44ecefa89d93a50160df7965a893c32d1f537e8d",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/bare_tests.js": "f4e4152c0f3792670e853e4961fa41aeb0247314",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/browser_environment_test.js": "1c1f906e0c067321fbe66e64a20be8c33eee184f",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/client_environment.js": "71c4a439c5de0cd1003ee161dbe260f3d7565899",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/client_environment_test.js": "9768c6f752766125191af99ac3e68da8a805fab5",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/cordova_environment.js": "80a12bf7bb20aa6ec23dfae1d8fb01c1b7f55d66",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/cordova_environment_test.js": "00549e18487a659868275ee53530a9a4bf584668",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/debug_test.js": "a075a14578bc7e849b0248deed2b9a6cb303791d",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/dynamics_browser.js": "28186e2a1eee12bc61baab6f90e487d99c3d4c1b",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/dynamics_test.js": "504923f65daaca5cad5d190b159661fd7d669e62",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/emitter-promise-tests.js": "afac7ff66536c9f4e2b1475f74fb05e99b654168",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/fiber_helpers_test.js": "acb6517511f49d2601f0e44636452542048d18f0",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/fiber_stubs_client.js": "896cbd9b42d3d2a4960f08bb7970a5d4913929ea",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/helpers_test.js": "bc47433ce11a32a2a398400124eb920ac9517b4c",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/server_environment_test.js": "3e912c18ab4d4b472abd8d1e25efa8e598f1bbc8",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/startup_client.js": "08a3d7803f417b3660b8561e01a8cc71ba0432b7",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/timers_tests.js": "3913d57b9760cfcefd6e24e2ef23c7ec049aee38",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/url_tests.js": "d0b9ac97cb4259bbdd6f9163fa65770e7cb433fb",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/package.js": "d37d16f6097705d0ae07f61143bac664f58ad22f",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/.npm/package/npm-shrinkwrap.json": "b38f5635266b4e74b23375c5d3697a857cb71df2",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/.npm/package/node_modules/install/install.js": "29694e43b96fc9f543cb0096361e75f83d557636",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors/importsErrors.js": "01c9be67be03046bc308fb27f59ea43fe1cb400c",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors/cannotFindMeteorPackage.js": "c14cc2fe88fa40d55622b69515316395f9fb435e",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/server.js": "14ef894c254a4a7a7095ffb1cdbd0fc3cc1dab14",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/profile.js": "74ddcd2a798d7cc4f7cbe1ae8c9f9007936bb19e",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/verifyErrors.js": "438afbd742c5a0ddaed86f3eeaae504cbc275490",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/legacy.js": "76b51678789181166d477573067a1b9aed7df34e",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/modern.js": "69762c2f3188217f6b77855bf6b9c936fcdc8762",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/modules-runtime-tests.js": "b09347b3f6e73d7c53e9122cd4f2c4cc08f358fc",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/package.js": "701afdba4f974ccdf8edcf6a9f1d38d6a8ae3ac3",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/.npm/package/npm-shrinkwrap.json": "92a4737cacfca74a2d69564a39611fb0bb421bad",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/server.js": "11d99298182f74afb5bb188ea219b95ef9b366a1",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/client.js": "1d77022dbb1b4b1627b8381e1c5ae444ddd8ab3d",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/css.js": "8f75bdb812965b89c93ac283ee0a21726cb5b1f7",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/install-packages.js": "1cba8f3703d0ceab95eec1da36d87d2a0d36d33e",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/legacy.js": "50b486bf5a93845206c61b19c78e3a6a6914aff5",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/process.js": "987a9859cda893eb3125615b22885e393a5092b9",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/reify.js": "41e8754efe545cd54fdc2834e21d5858f120cdb9",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/stubs.js": "946940234562d79a75ebb8f10757605e7996f386",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/.npm/package/node_modules/@meteorjs/reify/lib/runtime/index.js": "5b93abd9fe91e05890ffb6f2174c8ed5e29ad59a",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh/package.js": "cafc54f22a1b7d63e9ef685083042c29d6a66027",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh/.npm/package/npm-shrinkwrap.json": "25af261f053a14f02fb1be7ac116e589f6100847",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh/server.js": "9c8617472702d5e929c11958d87976c08b9b6a35",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh/client-runtime.js": "7582f7f0b3a6ce94a56edab3f3239d07811954c4",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh/client.js": "288b8b23ef4b214ab1ca1690cc9d1c05d6a1342e",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh/.npm/package/node_modules/semver/functions/gte.js": "b9c50a385c8e3877108a001fb8548b122a155193",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh/.npm/package/node_modules/react-refresh/babel.js": "7f85e714eeecb4adf4a93e297bcd5c8157013955",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript/package.js": "325829e72f4b3f9ff2700b6aabc81772f21a5309",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript/.npm/package/npm-shrinkwrap.json": "42a16976845e1e603d77312efd1856cbf920cced",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript/ecmascript.js": "d1b82c0c9fda98945aa69ffae3142217a13fa7c3",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript/bare-test-file.js": "6ab70954b08e6d8826b7aa59d01b8ceb3db948fa",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript/bare-test.js": "43013f1861117c912baf5bc241e0efd37887a813",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript/plugin.js": "a1f584b9eb4e721c6c8151705c4c5a0041eef7b1",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript/runtime-client-tests.js": "aed28041cc1e95c38b9afac670bce77fabdd0708",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript/runtime-tests.js": "c8fd2494d25be8a66c62fe02cfe0576543a41cff",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript/transpilation-tests.js": "d292c99a1c7455ef498894f4ab8b60811a40b426",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/package.js": "aacae883bf8b88dff062aeb8298bbe75fc9b9cd1",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/.npm/package/npm-shrinkwrap.json": "42a16976845e1e603d77312efd1856cbf920cced",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/runtime-tests.js": "297a44b442de78533e18dd2b1b404067ea5071ac",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/runtime.js": "389e875f089a003db1f1e851bf362d6a1c351435",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/package.js": "0f17ed972002c1a20e124bd97b5cd63bc6f52bb4",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/modern.d.ts": "2412da9659356a94f4d866db31f6bb4df5d2e3f2",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/modern.js": "d0d85dfa9fd149da8e1c21695967c38df4128f0f",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/modern-tests.js": "18cf6a5d1465a50903c45354b97bd46c4b1b5810",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/package.js": "d3dafd72cc6e4cb24d096e5e9c9eeb8f1a07776d",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/.npm/package/npm-shrinkwrap.json": "7530edd1f6ca97bf19f0f2e1f18a55753a8e7f61",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/promise.d.ts": "b4ac5a65dcf42bdf727fe69442b1c5c7a034ca5e",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/modern.js": "ae15b2311a67d2cab0e78ac9df88f38a72bb2106",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/server.js": "fc2473f5c250b83723c5e5a47cf260cdd78e2265",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/client.js": "8d101a402cf07762c5f0d53767fa1bbec903abea",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/extensions.js": "8b892725eddde797c1234eb48d9d26983d9af7d6",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/legacy.js": "22c9978055f32cec6e276a31412abb3a01923f71",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/promise-tests.js": "4e98f07a7d015dd3f08296cb003906384c9ed754",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client/package.js": "583148f8cfe481d30f3ae8d22febed2b7b0f9f57",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client/.npm/package/npm-shrinkwrap.json": "cd518862277dcdf2d6d51e5388a2eb4a1c8c4f25",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client/versions.js": "8e6d4b2696ef56cdfac3c976ba6188f4ef4cc1e0",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client/legacy.js": "2ae11bb793e6cb9ff5939cb14057c13dfa8b43c4",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client/modern.js": "4a267ceca3382709911d323e03fdd74a29dc04f8",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server/package.js": "39ac42ca5d36877b9806a05de9044b548bdb1573",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server/.npm/package/npm-shrinkwrap.json": "0dc45e1466a73b1ca04174b8f1254286ac1b05e5",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server/runtime.js": "49908bea780b1f52bb72ff4a121272a87d0c5687",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server/.npm/package/node_modules/core-js/modules/es.symbol.async-iterator.js": "1e100535e63ce134178016aff347eccd7796ef93",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/package.js": "27510f678263b8fd7068ca5f7747ccd0f5da79f1",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/.npm/package/npm-shrinkwrap.json": "fb09452533439e99bdc0fa39f20e56788020ccf2",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/babel.js": "faa5a33ab3dac3bda0b0b280a5891a4a0c8f2c2b",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/babel-compiler.js": "24dd8e833bc4c9e34898a1069409cdbb1f0a8f18",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/versions.js": "5b7f29405e55a51ddb65c6f2fa2ed318b5e28f0a",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-runtime/package.js": "96ad60ead9ad5e998f12d061d9ddca02e3ca39a8",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-runtime/babel-runtime.js": "cb23d057c22b7b4826675696daa2b5f409ef5f9f",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch/package.js": "eda748bf72b15fe6acae39a5cb8c0e9288643604",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch/.npm/package/npm-shrinkwrap.json": "de12d077df685a19f666534656e0d981e82b05e0",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch/fetch.d.ts": "586dbf2f2d31bc6ec0fbdaf41dbd547cf712cb83",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch/server.js": "5ea10b7b79ed32b240ba8bb9a1f2410be73e544e",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch/legacy.js": "4de7c8b78dcc18d2683c90e21339dbc9d2453bbf",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch/modern.js": "1f60d81b8a3add219d9c449d59733a82fb1b30c0",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch/tests/main.js": "405964dd8bef17cf16da6e6a7bf9668631db43a9",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch/.npm/package/node_modules/node-fetch/package.json": "78103f0f3ef4b327cee9e96b64d809ddba7c6fad",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch/.npm/package/node_modules/node-fetch/lib/index.js": "f943798350f33c6e9cda157023fb9d9f923d499e",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/package.js": "303ea9b8a5b398cc813b92ac6733939655f69930",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/.npm/package/npm-shrinkwrap.json": "0c0ad8b9a6dfd3c3a3484ead2b20578c812e196f",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/inter-process-messaging.js": "9f97de41a045992cad62b6e0ec4ebf920841a6d1",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/tests.js": "2d7cf9fef01ceaea69b316c564280f0cf32553d6",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/types.js": "851883187c3b5ed9a9ca2057aafadb3cf0b04c45",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/.npm/package/node_modules/uuid/package.json": "ebada18835d4bf7a690eff570c8b12518135a41c",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/.npm/package/node_modules/uuid/index.js": "8e8abb1384d04d1ec5745c9824eee400f77536c0",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/.npm/package/node_modules/arson/package.json": "d19eb480ff549ba803a8fcb96913c2e9356fc2dd",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/.npm/package/node_modules/arson/index.js": "33ff7a96f7d012c4d49ab30efde7d516182bdc7d",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/package.js": "e8884d3905c0652c9eb54a6933f66f98390a70d1",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/server.js": "bf57af47da109a98fc4bfaac7a9db67a65392aad",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/cache.js": "0368469afa83c8c92e0643cfaf0d52b1cd733cec",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/client.js": "6835a635498462839241258051187102584412a6",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/common.js": "3d4472440446fd92e4fcba378afdc250462e7fa2",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/dynamic-versions.js": "020f3a6df9791337f904fd2d68faf46f4167d2e9",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/security.js": "4343117e931e1f72a9f02749c9135e075a557157",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/minifier-js/package.js": "4b273ce596bd0768cdbed2b3c0142d0a0881d0d5",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/minifier-js/.npm/package/npm-shrinkwrap.json": "caf80bb90c647c641c158546c8342a3a351c631a",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/minifier-js/minifier.js": "0cc3c1ff5638eacb3298445ba4aac2c6ed0004e3",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/minifier-js/minifier-tests.js": "41dd7536eda2090090ac6faeb53e5a9dbf05bb55",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/.npm/plugin/minifyStdJS/npm-shrinkwrap.json": "0ba80a8a691270df8c6b96a40ef1f478406b8941",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin/minify-js.js": "6cb87c5e1fa4c383a7ce3bec207ec8a4bcc2efac",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/plugin/stats.js": "687b69219249337eb6fe2b510635d217776f2a7f",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/.npm/plugin/minifyStdJS/node_modules/@meteorjs/reify/lib/visitor.js": "21e5bc61196cdb6fa2b273d9881ac5de6f66d48b",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/.npm/plugin/minifyStdJS/node_modules/@meteorjs/reify/lib/utils.js": "65245ba14c25f3e9df2e846e134fd35591f72f27",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/.npm/plugin/minifyStdJS/node_modules/acorn/package.json": "22fabd4cea8c5ad56d943ea504d9d5b8ee2e87f0",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/.npm/plugin/minifyStdJS/node_modules/acorn/dist/acorn.js": "6dcaf84aff859ba04c252291593d2f8dd8a7c6ef",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/.npm/plugin/minifyStdJS/node_modules/@meteorjs/swc-core/package.json": "e029a71946ad20bce4f796e4c5e8ebdf8d8c544f",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/.npm/plugin/minifyStdJS/node_modules/@meteorjs/swc-core/index.js": "2d8c1053fc24fe3293f15b6f9e43d4253c07cc61",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/.npm/plugin/minifyStdJS/node_modules/terser/package.json": "8ad3a0cf44a5333fb6b3b9be24636212ea31e83c",
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js/.npm/plugin/minifyStdJS/node_modules/terser/dist/bundle.min.js": "f8235f3d341fbeb9f7e64fc362d3a8fe2fb6e801"
+    },
+    "potentiallyUnusedFiles": [
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/minifier-js/minifier-tests.js"
+    ],
+    "directories": [
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "load-js-image.js",
+          "package-registry.js",
+          "package.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "asl-helpers-client.js",
+          "asl-helpers.js",
+          "async_helpers.js",
+          "asynchronous_queue.js",
+          "bare_test_setup.js",
+          "bare_tests.js",
+          "browser_environment_test.js",
+          "client_environment.js",
+          "client_environment_test.js",
+          "cordova_environment.js",
+          "cordova_environment_test.js",
+          "debug.js",
+          "debug_test.js",
+          "deprecate.js",
+          "dynamics_browser.js",
+          "dynamics_nodejs.js",
+          "dynamics_test.js",
+          "emitter-promise-tests.js",
+          "emitter-promise.js",
+          "errors.js",
+          "fetch.js",
+          "fiber_helpers_test.js",
+          "fiber_stubs_client.js",
+          "flush-buffers-on-exit-in-windows.js",
+          "global.js",
+          "helpers.js",
+          "helpers_test.js",
+          "package.js",
+          "server_environment.js",
+          "server_environment_test.js",
+          "setimmediate.js",
+          "startup_client.js",
+          "startup_server.js",
+          "string_utils.js",
+          "test_environment.js",
+          "timers.js",
+          "timers_tests.js",
+          "url_common.js",
+          "url_server.js",
+          "url_tests.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": [
+          "plugin/"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "basic-file-types.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "legacy.js",
+          "modern.js",
+          "modules-runtime-tests.js",
+          "package.js",
+          "profile.js",
+          "server.js",
+          "verifyErrors.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": [
+          "errors/"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "cannotFindMeteorPackage.js",
+          "importsErrors.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "client.js",
+          "css.js",
+          "install-packages.js",
+          "legacy.js",
+          "package.js",
+          "process.js",
+          "reify.js",
+          "server.js",
+          "stubs.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "client-runtime.js",
+          "client.js",
+          "package.js",
+          "server.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript",
+        "include": [
+          "\\.js$",
+          "\\.jsx$",
+          "\\.mjs$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "bare-test-file.js",
+          "bare-test.js",
+          "ecmascript.js",
+          "package.js",
+          "plugin.js",
+          "runtime-client-tests.js",
+          "runtime-tests.js",
+          "transpilation-tests.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "load-js-image.js",
+          "package-registry.js",
+          "package.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "asl-helpers-client.js",
+          "asl-helpers.js",
+          "async_helpers.js",
+          "asynchronous_queue.js",
+          "bare_test_setup.js",
+          "bare_tests.js",
+          "browser_environment_test.js",
+          "client_environment.js",
+          "client_environment_test.js",
+          "cordova_environment.js",
+          "cordova_environment_test.js",
+          "debug.js",
+          "debug_test.js",
+          "deprecate.js",
+          "dynamics_browser.js",
+          "dynamics_nodejs.js",
+          "dynamics_test.js",
+          "emitter-promise-tests.js",
+          "emitter-promise.js",
+          "errors.js",
+          "fetch.js",
+          "fiber_helpers_test.js",
+          "fiber_stubs_client.js",
+          "flush-buffers-on-exit-in-windows.js",
+          "global.js",
+          "helpers.js",
+          "helpers_test.js",
+          "package.js",
+          "server_environment.js",
+          "server_environment_test.js",
+          "setimmediate.js",
+          "startup_client.js",
+          "startup_server.js",
+          "string_utils.js",
+          "test_environment.js",
+          "timers.js",
+          "timers_tests.js",
+          "url_common.js",
+          "url_server.js",
+          "url_tests.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": [
+          "plugin/"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "basic-file-types.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "package.js",
+          "runtime-tests.js",
+          "runtime.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "legacy.js",
+          "modern.js",
+          "modules-runtime-tests.js",
+          "package.js",
+          "profile.js",
+          "server.js",
+          "verifyErrors.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": [
+          "errors/"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "cannotFindMeteorPackage.js",
+          "importsErrors.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "client.js",
+          "css.js",
+          "install-packages.js",
+          "legacy.js",
+          "package.js",
+          "process.js",
+          "reify.js",
+          "server.js",
+          "stubs.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "modern-tests.js",
+          "modern.js",
+          "package.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "client.js",
+          "extensions.js",
+          "legacy.js",
+          "modern.js",
+          "package.js",
+          "promise-tests.js",
+          "server.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "legacy.js",
+          "modern.js",
+          "package.js",
+          "versions.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "package.js",
+          "runtime.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "babel-compiler.js",
+          "babel.js",
+          "package.js",
+          "versions.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "client-runtime.js",
+          "client.js",
+          "package.js",
+          "server.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "package.js",
+          "runtime-tests.js",
+          "runtime.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "modern-tests.js",
+          "modern.js",
+          "package.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "client.js",
+          "extensions.js",
+          "legacy.js",
+          "modern.js",
+          "package.js",
+          "promise-tests.js",
+          "server.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "legacy.js",
+          "modern.js",
+          "package.js",
+          "versions.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "package.js",
+          "runtime.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "babel-compiler.js",
+          "babel.js",
+          "package.js",
+          "versions.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-runtime",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "babel-runtime.js",
+          "package.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-runtime",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "legacy.js",
+          "modern.js",
+          "package.js",
+          "server.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": [
+          "tests/"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch/tests",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "main.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch/tests",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "inter-process-messaging.js",
+          "package.js",
+          "tests.js",
+          "types.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "cache.js",
+          "client.js",
+          "common.js",
+          "dynamic-versions.js",
+          "package.js",
+          "security.js",
+          "server.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "load-js-image.js",
+          "package-registry.js",
+          "package.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "asl-helpers-client.js",
+          "asl-helpers.js",
+          "async_helpers.js",
+          "asynchronous_queue.js",
+          "bare_test_setup.js",
+          "bare_tests.js",
+          "browser_environment_test.js",
+          "client_environment.js",
+          "client_environment_test.js",
+          "cordova_environment.js",
+          "cordova_environment_test.js",
+          "debug.js",
+          "debug_test.js",
+          "deprecate.js",
+          "dynamics_browser.js",
+          "dynamics_nodejs.js",
+          "dynamics_test.js",
+          "emitter-promise-tests.js",
+          "emitter-promise.js",
+          "errors.js",
+          "fetch.js",
+          "fiber_helpers_test.js",
+          "fiber_stubs_client.js",
+          "flush-buffers-on-exit-in-windows.js",
+          "global.js",
+          "helpers.js",
+          "helpers_test.js",
+          "package.js",
+          "server_environment.js",
+          "server_environment_test.js",
+          "setimmediate.js",
+          "startup_client.js",
+          "startup_server.js",
+          "string_utils.js",
+          "test_environment.js",
+          "timers.js",
+          "timers_tests.js",
+          "url_common.js",
+          "url_server.js",
+          "url_tests.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": [
+          "plugin/"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "basic-file-types.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "package.js",
+          "runtime-tests.js",
+          "runtime.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "legacy.js",
+          "modern.js",
+          "modules-runtime-tests.js",
+          "package.js",
+          "profile.js",
+          "server.js",
+          "verifyErrors.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": [
+          "errors/"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "cannotFindMeteorPackage.js",
+          "importsErrors.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "client.js",
+          "css.js",
+          "install-packages.js",
+          "legacy.js",
+          "package.js",
+          "process.js",
+          "reify.js",
+          "server.js",
+          "stubs.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "modern-tests.js",
+          "modern.js",
+          "package.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "client.js",
+          "extensions.js",
+          "legacy.js",
+          "modern.js",
+          "package.js",
+          "promise-tests.js",
+          "server.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "legacy.js",
+          "modern.js",
+          "package.js",
+          "versions.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "package.js",
+          "runtime.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "babel-compiler.js",
+          "babel.js",
+          "package.js",
+          "versions.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "client-runtime.js",
+          "client.js",
+          "package.js",
+          "server.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/minifier-js",
+        "include": [
+          "\\.js$",
+          "\\.jsx$",
+          "\\.mjs$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "minifier-tests.js",
+          "minifier.js",
+          "package.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/minifier-js",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "load-js-image.js",
+          "package-registry.js",
+          "package.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "asl-helpers-client.js",
+          "asl-helpers.js",
+          "async_helpers.js",
+          "asynchronous_queue.js",
+          "bare_test_setup.js",
+          "bare_tests.js",
+          "browser_environment_test.js",
+          "client_environment.js",
+          "client_environment_test.js",
+          "cordova_environment.js",
+          "cordova_environment_test.js",
+          "debug.js",
+          "debug_test.js",
+          "deprecate.js",
+          "dynamics_browser.js",
+          "dynamics_nodejs.js",
+          "dynamics_test.js",
+          "emitter-promise-tests.js",
+          "emitter-promise.js",
+          "errors.js",
+          "fetch.js",
+          "fiber_helpers_test.js",
+          "fiber_stubs_client.js",
+          "flush-buffers-on-exit-in-windows.js",
+          "global.js",
+          "helpers.js",
+          "helpers_test.js",
+          "package.js",
+          "server_environment.js",
+          "server_environment_test.js",
+          "setimmediate.js",
+          "startup_client.js",
+          "startup_server.js",
+          "string_utils.js",
+          "test_environment.js",
+          "timers.js",
+          "timers_tests.js",
+          "url_common.js",
+          "url_server.js",
+          "url_tests.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": [
+          "plugin/"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "basic-file-types.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "package.js",
+          "runtime-tests.js",
+          "runtime.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "legacy.js",
+          "modern.js",
+          "modules-runtime-tests.js",
+          "package.js",
+          "profile.js",
+          "server.js",
+          "verifyErrors.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": [
+          "errors/"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "cannotFindMeteorPackage.js",
+          "importsErrors.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "client.js",
+          "css.js",
+          "install-packages.js",
+          "legacy.js",
+          "package.js",
+          "process.js",
+          "reify.js",
+          "server.js",
+          "stubs.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "modern-tests.js",
+          "modern.js",
+          "package.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "client.js",
+          "extensions.js",
+          "legacy.js",
+          "modern.js",
+          "package.js",
+          "promise-tests.js",
+          "server.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "legacy.js",
+          "modern.js",
+          "package.js",
+          "versions.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "package.js",
+          "runtime.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "babel-compiler.js",
+          "babel.js",
+          "package.js",
+          "versions.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh",
+        "include": [
+          "\\.js$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "names": [
+          ".meteorignore"
+        ],
+        "contents": [
+          "client-runtime.js",
+          "client.js",
+          "package.js",
+          "server.js"
+        ]
+      },
+      {
+        "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh",
+        "include": [
+          "\\/$"
+        ],
+        "exclude": [
+          "^\\."
+        ],
+        "contents": []
+      }
+    ]
+  },
+  "pluginProviderPackageMap": {
+    "minifier-js": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/minifier-js"
+    },
+    "meteor": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor"
+    },
+    "core-runtime": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime"
+    },
+    "ecmascript": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript"
+    },
+    "react-fast-refresh": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/react-fast-refresh"
+    },
+    "modules": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules"
+    },
+    "modules-runtime": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime"
+    },
+    "babel-compiler": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler"
+    },
+    "ecmascript-runtime": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime"
+    },
+    "modern-browsers": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers"
+    },
+    "ecmascript-runtime-client": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client"
+    },
+    "promise": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise"
+    },
+    "ecmascript-runtime-server": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server"
+    },
+    "babel-runtime": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-runtime"
+    },
+    "dynamic-import": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import"
+    },
+    "fetch": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch"
+    },
+    "inter-process-messaging": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging"
+    },
+    "standard-minifier-js": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/standard-minifier-js"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

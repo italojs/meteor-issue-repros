@@ -1,0 +1,454 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "MongoInternals",
+      "testOnly": false
+    },
+    {
+      "name": "Mongo",
+      "testOnly": false
+    },
+    {
+      "name": "CollectionExtensions",
+      "testOnly": false
+    },
+    {
+      "name": "ObserveMultiplexer",
+      "testOnly": true
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "npm-mongo"
+    },
+    {
+      "package": "allow-deny"
+    },
+    {
+      "package": "random"
+    },
+    {
+      "package": "ejson"
+    },
+    {
+      "package": "minimongo"
+    },
+    {
+      "package": "ddp"
+    },
+    {
+      "package": "tracker"
+    },
+    {
+      "package": "diff-sequence"
+    },
+    {
+      "package": "mongo-id"
+    },
+    {
+      "package": "check"
+    },
+    {
+      "package": "ecmascript"
+    },
+    {
+      "package": "typescript"
+    },
+    {
+      "package": "mongo-dev-server"
+    },
+    {
+      "package": "logging"
+    },
+    {
+      "package": "mongo-decimal"
+    },
+    {
+      "package": "binary-heap"
+    },
+    {
+      "package": "insecure",
+      "weak": true
+    },
+    {
+      "package": "autopublish",
+      "weak": true
+    },
+    {
+      "package": "disable-oplog",
+      "weak": true
+    },
+    {
+      "package": "webapp",
+      "weak": true
+    },
+    {
+      "package": "facts-base",
+      "weak": true
+    },
+    {
+      "package": "callback-hook"
+    }
+  ],
+  "resources": [
+    {
+      "type": "asset",
+      "file": "os/packages/mongo/mongo.d.ts",
+      "length": 28686,
+      "offset": 0,
+      "servePath": "/packages/mongo/mongo.d.ts",
+      "path": "mongo.d.ts",
+      "hash": "271cdd63714b5f1e2a8ab9b7934a8aea43bd4cc7"
+    },
+    {
+      "type": "asset",
+      "file": "os/packages/mongo/package-types.json",
+      "length": 33,
+      "offset": 0,
+      "servePath": "/packages/mongo/package-types.json",
+      "path": "package-types.json",
+      "hash": "88c57d5a090dfb531cd3be194e77ff8c9e466739"
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/mongo_driver.js",
+      "length": 3098,
+      "offset": 0,
+      "path": "mongo_driver.js",
+      "hash": "732fe652f4d0c9c794d155423274b686868bc125",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/oplog_tailing.ts",
+      "length": 14566,
+      "offset": 0,
+      "path": "oplog_tailing.ts",
+      "hash": "7f051271fa50585e9b91796f1ba2cbf05a651834",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/observe_multiplex.ts",
+      "length": 7339,
+      "offset": 0,
+      "path": "observe_multiplex.ts",
+      "hash": "8af13cd36ec5d0974c98829422f03d2ca1824084",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/doc_fetcher.js",
+      "length": 1925,
+      "offset": 0,
+      "path": "doc_fetcher.js",
+      "hash": "8bd6257316aff5aa04037898b58b4b95a5c9fa3b",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/polling_observe_driver.ts",
+      "length": 5827,
+      "offset": 0,
+      "path": "polling_observe_driver.ts",
+      "hash": "1b4c977e501aece4f3ac9d04d5895cb4f5045679",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/oplog_observe_driver.js",
+      "length": 41301,
+      "offset": 0,
+      "path": "oplog_observe_driver.js",
+      "hash": "196c3a15f5b346d57c776ec225ac451bbe8bd8c0",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/oplog_v2_converter.ts",
+      "length": 5794,
+      "offset": 0,
+      "path": "oplog_v2_converter.ts",
+      "hash": "43078ab02629e1368df0c30739672b5ac16cb9d6",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/cursor_description.ts",
+      "length": 1851,
+      "offset": 0,
+      "path": "cursor_description.ts",
+      "hash": "5ffe4365b4ccb300e39541d7c888bdc0eabce878",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/mongo_connection.js",
+      "length": 45294,
+      "offset": 0,
+      "path": "mongo_connection.js",
+      "hash": "a696264c4e0534a56242be8624785e60e5e52894",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/mongo_common.js",
+      "length": 7511,
+      "offset": 0,
+      "path": "mongo_common.js",
+      "hash": "b7a97e3f9c73115f5856be33e8990491d0b9df73",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/asynchronous_cursor.js",
+      "length": 5111,
+      "offset": 0,
+      "path": "asynchronous_cursor.js",
+      "hash": "53810cb58b3508a1f4df8f2651c6d5c8e823f985",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/cursor.ts",
+      "length": 4192,
+      "offset": 0,
+      "path": "cursor.ts",
+      "hash": "e8f853f7dcc80820f3aa2c87cc7e20bce32f4d2e",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/shared_change_stream.js",
+      "length": 10469,
+      "offset": 0,
+      "path": "shared_change_stream.js",
+      "hash": "5a304b934b19a7a58d7d36c8d9d5352b11ba1f3d",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/changestream_observe_driver.js",
+      "length": 26861,
+      "offset": 0,
+      "path": "changestream_observe_driver.js",
+      "hash": "6434079c7ad5ba826b7a2a9f60ef8c0c11b1b124",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/local_collection_driver.js",
+      "length": 798,
+      "offset": 0,
+      "path": "local_collection_driver.js",
+      "hash": "d4e6e73b41b20e726f8a7806dae7dfe3dc172eb7",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/remote_collection_driver.ts",
+      "length": 3549,
+      "offset": 0,
+      "path": "remote_collection_driver.ts",
+      "hash": "ca9431f8b6265eaf073a595d1f3fd09ffcda93e3",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/collection/collection_extensions.js",
+      "length": 3651,
+      "offset": 0,
+      "path": "collection/collection_extensions.js",
+      "hash": "2505e3a6aaf19c9cfdb7230fcf6eca87885a7f03",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/collection/collection.js",
+      "length": 13017,
+      "offset": 0,
+      "path": "collection/collection.js",
+      "hash": "87fab160b9eec1e115a9747786812824f4c350b1",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/connection_options.ts",
+      "length": 389,
+      "offset": 0,
+      "path": "connection_options.ts",
+      "hash": "e0a93f71a44b47be662a381fcf33755b470882d4",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/mongo.d.ts",
+      "length": 28686,
+      "offset": 0,
+      "path": "mongo.d.ts",
+      "hash": "271cdd63714b5f1e2a8ab9b7934a8aea43bd4cc7",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/mongo_utils.js",
+      "length": 428,
+      "offset": 0,
+      "path": "mongo_utils.js",
+      "hash": "b8dedc4813c1e451c5e1828b8b5c4245b0228559",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/observe_handle.ts",
+      "length": 2120,
+      "offset": 0,
+      "path": "observe_handle.ts",
+      "hash": "61374faa65f4cf990761b61bb64b2a79c4776b31",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/types.ts",
+      "length": 747,
+      "offset": 0,
+      "path": "types.ts",
+      "hash": "c2e05715fb35472f265cf5257fd7eb8b87618273",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/collection/collection_utils.js",
+      "length": 2985,
+      "offset": 0,
+      "path": "collection/collection_utils.js",
+      "hash": "97821fed333f901483d412f91dbdc31128b62ede",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/collection/methods_async.js",
+      "length": 9472,
+      "offset": 0,
+      "path": "collection/methods_async.js",
+      "hash": "f40a3cdc1ca8edba64b49c8fe6adea010ff65c9b",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/collection/methods_index.js",
+      "length": 5120,
+      "offset": 0,
+      "path": "collection/methods_index.js",
+      "hash": "e721a9a03c06e1b63db9d47d2f1c796167407ddc",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/collection/methods_replication.js",
+      "length": 9490,
+      "offset": 0,
+      "path": "collection/methods_replication.js",
+      "hash": "9d2753964073b52f7390d765723db25e7896d168",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/collection/methods_sync.js",
+      "length": 16044,
+      "offset": 0,
+      "path": "collection/methods_sync.js",
+      "hash": "f6794dcf27fa8a6f48100c6d1c37a3e4ddf6a9aa",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

@@ -1,0 +1,4 @@
+import { Config } from './types';
+import { Linter } from '@rsdoctor/types';
+export type { Config } from './types';
+export declare const rule: Linter.RuleData<Config, "ecma-version-check">;

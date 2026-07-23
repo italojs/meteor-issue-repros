@@ -1,0 +1,43 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "meteorInstall",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/installer.js",
+      "length": 20906,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "installer.js",
+      "hash": "2ba491250c590905268bd2af2d2e65342b278733",
+      "fileOptions": {
+        "bare": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/modern.js",
+      "length": 698,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "modern.js",
+      "hash": "98efb6807b55b127a457e0f9d862934726e6cf92",
+      "fileOptions": {
+        "lazy": false
+      }
+    }
+  ]
+}

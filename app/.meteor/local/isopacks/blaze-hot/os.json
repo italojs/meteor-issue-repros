@@ -1,0 +1,56 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "modules",
+      "constraint": "0.20.1"
+    },
+    {
+      "package": "ecmascript",
+      "constraint": "0.16.9"
+    },
+    {
+      "package": "blaze",
+      "constraint": "3.0.3"
+    },
+    {
+      "package": "templating-runtime",
+      "constraint": "2.0.2"
+    },
+    {
+      "package": "hot-module-replacement",
+      "constraint": "0.5.4",
+      "weak": true
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/hot.js",
+      "length": 3816,
+      "offset": 0,
+      "path": "hot.js",
+      "hash": "96986ac6e8f20e5acc06f16ceb4ce2fffd6f4af7",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/update-templates.js",
+      "length": 4806,
+      "offset": 0,
+      "path": "update-templates.js",
+      "hash": "4950d5262a20e5cbba13d01700b76f5949d423ce",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

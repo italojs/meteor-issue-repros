@@ -1,0 +1,94 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "DDPCommon",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "check"
+    },
+    {
+      "package": "random"
+    },
+    {
+      "package": "ecmascript"
+    },
+    {
+      "package": "ejson"
+    },
+    {
+      "package": "tracker"
+    },
+    {
+      "package": "retry"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/namespace.js",
+      "length": 415,
+      "offset": 0,
+      "path": "namespace.js",
+      "hash": "8d6f4f57e07907666f4db5a533025f29b7d64372",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/heartbeat.js",
+      "length": 2710,
+      "offset": 0,
+      "path": "heartbeat.js",
+      "hash": "0bc828f8bbbe43eb63633599d1e3fa293642799e",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/utils.js",
+      "length": 3223,
+      "offset": 0,
+      "path": "utils.js",
+      "hash": "b9d5d562e14c72a9be2a9693a5ace14b794d2957",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/method_invocation.js",
+      "length": 3687,
+      "offset": 0,
+      "path": "method_invocation.js",
+      "hash": "0a67a138c4c7feac6c5519f0e985ed1f4ad374ba",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/random_stream.js",
+      "length": 4126,
+      "offset": 0,
+      "path": "random_stream.js",
+      "hash": "4f326a13aaee489102bb4b1d6a7f395d7c31bb8c",
+      "fileOptions": {
+        "lazy": false
+      }
+    }
+  ]
+}

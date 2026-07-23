@@ -1,0 +1,21 @@
+{
+  "isopack-2": {
+    "name": "inter-process-messaging",
+    "summary": "Support for sending messages from the build process to the server process",
+    "version": "0.1.2",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": []
+  }
+}

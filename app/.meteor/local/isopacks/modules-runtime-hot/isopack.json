@@ -1,0 +1,21 @@
+{
+  "isopack-2": {
+    "name": "modules-runtime-hot",
+    "summary": "Patches modules-runtime to support Hot Module Replacement",
+    "version": "0.14.3",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": []
+  }
+}

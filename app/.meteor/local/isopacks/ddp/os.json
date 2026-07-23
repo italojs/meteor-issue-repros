@@ -1,0 +1,45 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "DDP",
+      "testOnly": false
+    },
+    {
+      "name": "DDPServer",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ddp-client"
+    },
+    {
+      "package": "ddp-server"
+    }
+  ],
+  "implies": [
+    {
+      "package": "ddp-client",
+      "constraint": ""
+    },
+    {
+      "package": "ddp-server",
+      "constraint": ""
+    }
+  ],
+  "resources": [
+    {
+      "type": "asset",
+      "file": "os/packages/ddp/ddp.d.ts",
+      "length": 2333,
+      "offset": 0,
+      "servePath": "/packages/ddp/ddp.d.ts",
+      "path": "ddp.d.ts",
+      "hash": "6d856c51ce8e00c6167703d00c5aa0f75dd8c3ac"
+    }
+  ]
+}

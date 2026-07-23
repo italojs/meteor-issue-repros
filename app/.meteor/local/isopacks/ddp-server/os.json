@@ -1,0 +1,294 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "DDPServer",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "check"
+    },
+    {
+      "package": "random"
+    },
+    {
+      "package": "ejson"
+    },
+    {
+      "package": "retry"
+    },
+    {
+      "package": "mongo-id"
+    },
+    {
+      "package": "diff-sequence"
+    },
+    {
+      "package": "ecmascript"
+    },
+    {
+      "package": "typescript"
+    },
+    {
+      "package": "ddp-common"
+    },
+    {
+      "package": "ddp-rate-limiter",
+      "weak": true
+    },
+    {
+      "package": "ddp-client"
+    },
+    {
+      "package": "webapp"
+    },
+    {
+      "package": "routepolicy"
+    },
+    {
+      "package": "audit-argument-checks",
+      "weak": true
+    },
+    {
+      "package": "autopublish",
+      "weak": true
+    },
+    {
+      "package": "facts-base",
+      "unordered": true
+    },
+    {
+      "package": "callback-hook"
+    }
+  ],
+  "implies": [
+    {
+      "package": "ddp-client",
+      "constraint": ""
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/transports/raw_connection.js",
+      "length": 2081,
+      "offset": 0,
+      "path": "transports/raw_connection.js",
+      "hash": "5b6c5a84de18f95eb34b36ac0c1ccdb369251cdc",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/transports/sockjs.js",
+      "length": 4580,
+      "offset": 0,
+      "path": "transports/sockjs.js",
+      "hash": "3b226bd8d9016e133acea8db1c880cc875e15a88",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/transports/uws.js",
+      "length": 7564,
+      "offset": 0,
+      "path": "transports/uws.js",
+      "hash": "7b2489f3f10d44a91f442bfce0d5b68c4865425c",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/transports/index.js",
+      "length": 1460,
+      "offset": 0,
+      "path": "transports/index.js",
+      "hash": "eede740ce0f5e2d960c1a6bfa4209084f30cf0a8",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/stream_server.js",
+      "length": 4591,
+      "offset": 0,
+      "path": "stream_server.js",
+      "hash": "62745d5ae901b9bba1b282fc11dccba7c9fcf1be",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/livedata_server.js",
+      "length": 65783,
+      "offset": 0,
+      "path": "livedata_server.js",
+      "hash": "2857f95d03966a4c858e9516d2120cdd5c686052",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/writefence.js",
+      "length": 2681,
+      "offset": 0,
+      "path": "writefence.js",
+      "hash": "ee20958a633540177bf0fd5eb3aa69638fc54229",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/crossbar.js",
+      "length": 6657,
+      "offset": 0,
+      "path": "crossbar.js",
+      "hash": "eee0f129530e32c51ced987d249e8b593247c1f7",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/server_convenience.js",
+      "length": 634,
+      "offset": 0,
+      "path": "server_convenience.js",
+      "hash": "c5e436602b25583035cf549d885e11467e3fe111",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/crossbar_tests.js",
+      "length": 2113,
+      "offset": 0,
+      "path": "crossbar_tests.js",
+      "hash": "35cc7f05a33953718bb71adaa9a393b40a41c010",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/dummy_document_view.ts",
+      "length": 839,
+      "offset": 0,
+      "path": "dummy_document_view.ts",
+      "hash": "5893638a997a0c91e7f3c2bc16f5b3e84112eb9e",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/livedata_server_async_tests.js",
+      "length": 6292,
+      "offset": 0,
+      "path": "livedata_server_async_tests.js",
+      "hash": "1cb4512066ffaed751c6a106a2a89e9b22076f59",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/livedata_server_tests.js",
+      "length": 31363,
+      "offset": 0,
+      "path": "livedata_server_tests.js",
+      "hash": "b2103e52ab81af108495166a263bae7f97942d4a",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/raw_websocket_tests.js",
+      "length": 5311,
+      "offset": 0,
+      "path": "raw_websocket_tests.js",
+      "hash": "d16c86b9c265308a8d0811b715fdbcd50da5a3f3",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/session_collection_view.ts",
+      "length": 4831,
+      "offset": 0,
+      "path": "session_collection_view.ts",
+      "hash": "8bcd31ab7fb10f07c56bf45b1509849ae05a8887",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "os/session_document_view.ts",
+      "length": 2919,
+      "offset": 0,
+      "path": "session_document_view.ts",
+      "hash": "bfe67fbbe39f93aa0f94380aedf2a1f7bd58d8de",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/session_view_tests.js",
+      "length": 11463,
+      "offset": 0,
+      "path": "session_view_tests.js",
+      "hash": "799d13e1ce935ec77e62b4407efc7e88edebcfcc",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/transports/uws_tests.js",
+      "length": 4963,
+      "offset": 0,
+      "path": "transports/uws_tests.js",
+      "hash": "d8bec102df1c9278f3b114ed577f2ac8725198e7",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

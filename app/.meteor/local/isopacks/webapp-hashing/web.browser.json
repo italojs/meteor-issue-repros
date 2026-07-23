@@ -1,0 +1,43 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "WebAppHashing",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/webapp-hashing-tests.js",
+      "length": 5014,
+      "offset": 0,
+      "path": "webapp-hashing-tests.js",
+      "hash": "e9c9ee31fc49b0e27821a5b6782afc579a2a5c00",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/webapp-hashing.js",
+      "length": 1720,
+      "offset": 0,
+      "path": "webapp-hashing.js",
+      "hash": "7397b1338a86b330db0e5eff5037c81164faa228",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "Babel",
+      "testOnly": false
+    },
+    {
+      "name": "BabelCompiler",
+      "testOnly": false
+    },
+    {
+      "name": "SwcCompiler",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript-runtime"
+    },
+    {
+      "package": "modern-browsers"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/babel.js",
+      "length": 1797,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "babel.js",
+      "hash": "faa5a33ab3dac3bda0b0b280a5891a4a0c8f2c2b",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/babel-compiler.js",
+      "length": 40619,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "babel-compiler.js",
+      "hash": "24dd8e833bc4c9e34898a1069409cdbb1f0a8f18",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/versions.js",
+      "length": 610,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "versions.js",
+      "hash": "5b7f29405e55a51ddb65c6f2fa2ed318b5e28f0a",
+      "fileOptions": {
+        "lazy": false
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

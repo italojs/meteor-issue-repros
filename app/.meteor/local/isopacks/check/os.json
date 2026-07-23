@@ -1,0 +1,72 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "check",
+      "testOnly": false
+    },
+    {
+      "name": "Match",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    },
+    {
+      "package": "ejson"
+    }
+  ],
+  "resources": [
+    {
+      "type": "asset",
+      "file": "os/packages/check/check.d.ts",
+      "length": 3836,
+      "offset": 0,
+      "servePath": "/packages/check/check.d.ts",
+      "path": "check.d.ts",
+      "hash": "eccc32f2f91f14689d0f51968bf897009285a81b"
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/match.js",
+      "length": 17440,
+      "offset": 0,
+      "path": "match.js",
+      "hash": "f7f231c2aee0b2bfbd4c5bf4306fb67d2f9d5fd6",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/isPlainObject.js",
+      "length": 945,
+      "offset": 0,
+      "path": "isPlainObject.js",
+      "hash": "a6321ea3e1390e3e7d3085153605c2f48dc95399",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/match_test.js",
+      "length": 24973,
+      "offset": 0,
+      "path": "match_test.js",
+      "hash": "6d383a0264c38777b535bcd286b90bb3b28b9b94",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

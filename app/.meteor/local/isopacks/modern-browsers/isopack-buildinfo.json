@@ -1,0 +1,115 @@
+{
+  "builtBy": "meteor/34",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/package.js": "0f17ed972002c1a20e124bd97b5cd63bc6f52bb4",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/package.js": "701afdba4f974ccdf8edcf6a9f1d38d6a8ae3ac3",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/modern.d.ts": "2412da9659356a94f4d866db31f6bb4df5d2e3f2",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/modern.js": "d0d85dfa9fd149da8e1c21695967c38df4128f0f",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/modern-tests.js": "18cf6a5d1465a50903c45354b97bd46c4b1b5810"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/modern.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/modern-tests.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "modern-tests.js",
+            "modern.js",
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/package.js": "0f17ed972002c1a20e124bd97b5cd63bc6f52bb4",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/package.js": "701afdba4f974ccdf8edcf6a9f1d38d6a8ae3ac3",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/modern-tests.js": "18cf6a5d1465a50903c45354b97bd46c4b1b5810",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/modern.js": "d0d85dfa9fd149da8e1c21695967c38df4128f0f"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/modern-tests.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/modern.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "modern-tests.js",
+            "modern.js",
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/package.js": "0f17ed972002c1a20e124bd97b5cd63bc6f52bb4"
+    },
+    "potentiallyUnusedFiles": [],
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "modern-browsers": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers"
+    },
+    "meteor": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor"
+    },
+    "modules": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

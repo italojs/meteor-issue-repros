@@ -1,0 +1,21 @@
+{
+  "isopack-2": {
+    "name": "es5-shim",
+    "summary": "Shims and polyfills to improve ECMAScript 5 support",
+    "version": "4.8.1",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": []
+  }
+}

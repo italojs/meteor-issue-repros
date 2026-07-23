@@ -1,0 +1,102 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "Log",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ejson"
+    },
+    {
+      "package": "ecmascript"
+    },
+    {
+      "package": "typescript"
+    },
+    {
+      "package": "ecmascript-runtime-client"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/logging.js",
+      "length": 9127,
+      "offset": 0,
+      "path": "logging.js",
+      "hash": "3ec6923c9b8a23cbd2350c81f642460732f05047",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/logging_browser.js",
+      "length": 81,
+      "offset": 0,
+      "path": "logging_browser.js",
+      "hash": "4647c44375190e365f07bb98e92cef2d075d9390",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "ts",
+      "file": "web.browser/logging.d.ts",
+      "length": 1350,
+      "offset": 0,
+      "path": "logging.d.ts",
+      "hash": "718f2340f07fbdfdb5c03e2e01884258ca52d493",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/logging_cordova.js",
+      "length": 506,
+      "offset": 0,
+      "path": "logging_cordova.js",
+      "hash": "d50e09e567c1641c8d2c161e3b3f1fecdd947e6e",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/logging_server.js",
+      "length": 132,
+      "offset": 0,
+      "path": "logging_server.js",
+      "hash": "15d76d5c634861989e233f73c50b5bf5dcc17de0",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/logging_test.js",
+      "length": 12867,
+      "offset": 0,
+      "path": "logging_test.js",
+      "hash": "3a3a0ca293f9dab32be0b18f0fbd03c8dc597159",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

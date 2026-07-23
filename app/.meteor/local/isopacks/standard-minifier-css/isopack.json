@@ -1,0 +1,28 @@
+{
+  "isopack-2": {
+    "name": "standard-minifier-css",
+    "summary": "Standard css minifier used with Meteor apps by default.",
+    "version": "1.10.1",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": [
+      {
+        "name": "minifyStdCSS",
+        "arch": "os",
+        "path": "plugin.minifyStdCSS.os/program.json"
+      }
+    ],
+    "devOnly": true
+  }
+}

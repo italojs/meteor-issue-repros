@@ -1,0 +1,4 @@
+import { Linter } from '@rsdoctor/types';
+import type { Config } from './types';
+export type { Config } from './types';
+export declare const rule: Linter.RuleData<Config, "default-import-check">;

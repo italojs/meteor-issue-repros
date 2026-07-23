@@ -1,0 +1,44 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "Hook",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/hook.js",
+      "length": 9421,
+      "offset": 0,
+      "path": "hook.js",
+      "hash": "ead6a3577bc0eb81d69817ca9736665c8c64f2d8",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/hook_tests.js",
+      "length": 6546,
+      "offset": 0,
+      "path": "hook_tests.js",
+      "hash": "f98a18bcfa862465c687095cc30745b71fb26c30",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

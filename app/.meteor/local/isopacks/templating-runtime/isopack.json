@@ -1,0 +1,21 @@
+{
+  "isopack-2": {
+    "name": "templating-runtime",
+    "summary": "Runtime for compiled .html files",
+    "version": "2.0.2",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": []
+  }
+}

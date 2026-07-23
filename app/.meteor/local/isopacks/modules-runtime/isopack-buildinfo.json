@@ -1,0 +1,203 @@
+{
+  "builtBy": "meteor/34",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/package.js": "d37d16f6097705d0ae07f61143bac664f58ad22f",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/.npm/package/npm-shrinkwrap.json": "b38f5635266b4e74b23375c5d3697a857cb71df2",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/.npm/package/node_modules/install/install.js": "29694e43b96fc9f543cb0096361e75f83d557636",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors/importsErrors.js": "01c9be67be03046bc308fb27f59ea43fe1cb400c",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors/cannotFindMeteorPackage.js": "c14cc2fe88fa40d55622b69515316395f9fb435e",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/server.js": "14ef894c254a4a7a7095ffb1cdbd0fc3cc1dab14",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/profile.js": "74ddcd2a798d7cc4f7cbe1ae8c9f9007936bb19e",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/verifyErrors.js": "438afbd742c5a0ddaed86f3eeaae504cbc275490",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/legacy.js": "76b51678789181166d477573067a1b9aed7df34e",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/modern.js": "69762c2f3188217f6b77855bf6b9c936fcdc8762",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/modules-runtime-tests.js": "b09347b3f6e73d7c53e9122cd4f2c4cc08f358fc"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/.npm/package/node_modules/install/install.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors/importsErrors.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors/cannotFindMeteorPackage.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/server.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/profile.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/verifyErrors.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/legacy.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/modern.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/modules-runtime-tests.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "legacy.js",
+            "modern.js",
+            "modules-runtime-tests.js",
+            "package.js",
+            "profile.js",
+            "server.js",
+            "verifyErrors.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": [
+            "errors/"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "cannotFindMeteorPackage.js",
+            "importsErrors.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/package.js": "d37d16f6097705d0ae07f61143bac664f58ad22f",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/.npm/package/npm-shrinkwrap.json": "b38f5635266b4e74b23375c5d3697a857cb71df2",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/.npm/package/node_modules/install/install.js": "29694e43b96fc9f543cb0096361e75f83d557636",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors/importsErrors.js": "01c9be67be03046bc308fb27f59ea43fe1cb400c",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors/cannotFindMeteorPackage.js": "c14cc2fe88fa40d55622b69515316395f9fb435e",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/modern.js": "69762c2f3188217f6b77855bf6b9c936fcdc8762",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/profile.js": "74ddcd2a798d7cc4f7cbe1ae8c9f9007936bb19e",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/verifyErrors.js": "438afbd742c5a0ddaed86f3eeaae504cbc275490",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/legacy.js": "76b51678789181166d477573067a1b9aed7df34e",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/modules-runtime-tests.js": "b09347b3f6e73d7c53e9122cd4f2c4cc08f358fc",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/server.js": "14ef894c254a4a7a7095ffb1cdbd0fc3cc1dab14"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/.npm/package/node_modules/install/install.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors/importsErrors.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors/cannotFindMeteorPackage.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/modern.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/profile.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/verifyErrors.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/legacy.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/modules-runtime-tests.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/server.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "legacy.js",
+            "modern.js",
+            "modules-runtime-tests.js",
+            "package.js",
+            "profile.js",
+            "server.js",
+            "verifyErrors.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": [
+            "errors/"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "cannotFindMeteorPackage.js",
+            "importsErrors.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/errors",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime/package.js": "d37d16f6097705d0ae07f61143bac664f58ad22f"
+    },
+    "potentiallyUnusedFiles": [],
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "modules-runtime": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime"
+    },
+    "meteor": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

@@ -1,0 +1,21 @@
+{
+  "isopack-2": {
+    "name": "mobile-experience",
+    "summary": "Packages for a great mobile user experience",
+    "version": "1.1.2",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": []
+  }
+}

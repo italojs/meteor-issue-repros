@@ -1,0 +1,99 @@
+{
+  "builtBy": "meteor/34",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/package.js": "b0bb5b7e7b8423537582b039d52bd7fc0409e2f0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/package-registry.js": "a793907191245fff98efb5b809e600909f94f458",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/load-js-image.js": "4c1c42c76626eff64b4801e1202e4370b2c4186d"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/package-registry.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/load-js-image.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "load-js-image.js",
+            "package-registry.js",
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/package.js": "b0bb5b7e7b8423537582b039d52bd7fc0409e2f0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/package-registry.js": "a793907191245fff98efb5b809e600909f94f458",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/load-js-image.js": "4c1c42c76626eff64b4801e1202e4370b2c4186d"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/package-registry.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/load-js-image.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "load-js-image.js",
+            "package-registry.js",
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime/package.js": "b0bb5b7e7b8423537582b039d52bd7fc0409e2f0"
+    },
+    "potentiallyUnusedFiles": [],
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "core-runtime": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/core-runtime"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

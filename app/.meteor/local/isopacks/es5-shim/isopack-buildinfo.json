@@ -1,0 +1,134 @@
+{
+  "builtBy": "meteor/34",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/package.js": "750e4f96947981705e84076032e56572527c0c6c",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/package.js": "701afdba4f974ccdf8edcf6a9f1d38d6a8ae3ac3",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/.npm/package/npm-shrinkwrap.json": "f221d64c0a570a3ba3369bed940ff1069dbc3381",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/client.js": "95eaa608e4e3c6bbcddae7b02c69f8cbbdcc986c",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/console.js": "2362107985a9d751ea0990bc7c2de11029a5ab8d",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/cordova.js": "ae67f5cbe8e8c1bc4014b4b6de150d7228d01730",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/export_globals.js": "26552caa1fcf940ece29179fa56543ad4a6e67d3",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/import_globals.js": "a75c0d90ab0c6156b96662efba849840a130460c"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/client.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/console.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/cordova.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/export_globals.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/import_globals.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "client.js",
+            "console.js",
+            "cordova.js",
+            "export_globals.js",
+            "import_globals.js",
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/package.js": "750e4f96947981705e84076032e56572527c0c6c",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/package.js": "701afdba4f974ccdf8edcf6a9f1d38d6a8ae3ac3",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/.npm/package/npm-shrinkwrap.json": "f221d64c0a570a3ba3369bed940ff1069dbc3381",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/client.js": "95eaa608e4e3c6bbcddae7b02c69f8cbbdcc986c",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/console.js": "2362107985a9d751ea0990bc7c2de11029a5ab8d",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/cordova.js": "ae67f5cbe8e8c1bc4014b4b6de150d7228d01730",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/export_globals.js": "26552caa1fcf940ece29179fa56543ad4a6e67d3",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/import_globals.js": "a75c0d90ab0c6156b96662efba849840a130460c"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/client.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/console.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/cordova.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/export_globals.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/import_globals.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "client.js",
+            "console.js",
+            "cordova.js",
+            "export_globals.js",
+            "import_globals.js",
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim/package.js": "750e4f96947981705e84076032e56572527c0c6c"
+    },
+    "potentiallyUnusedFiles": [],
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "es5-shim": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/es5-shim"
+    },
+    "meteor": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor"
+    },
+    "modules": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

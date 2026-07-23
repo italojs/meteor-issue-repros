@@ -1,0 +1,47 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "meteorJsMinify",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    },
+    {
+      "package": "babel-compiler"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/minifier-tests.js",
+      "length": 1102,
+      "offset": 0,
+      "path": "minifier-tests.js",
+      "hash": "41dd7536eda2090090ac6faeb53e5a9dbf05bb55",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/minifier.js",
+      "length": 1189,
+      "offset": 0,
+      "path": "minifier.js",
+      "hash": "0cc3c1ff5638eacb3298445ba4aac2c6ed0004e3",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

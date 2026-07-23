@@ -1,0 +1,28 @@
+{
+  "isopack-2": {
+    "name": "standard-minifier-js",
+    "summary": "Standard javascript minifiers used with Meteor apps by default.",
+    "version": "3.2.0",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": [
+      {
+        "name": "minifyStdJS",
+        "arch": "os",
+        "path": "plugin.minifyStdJS.os/program.json"
+      }
+    ],
+    "devOnly": true
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "builtBy": "meteor/34",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push/package.js": "2242463d55d53652ff4d1d2735b8d40605283526",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push/hot-code-push-tests.js": "fd08bcb7f4e54a4dc1cb4ae512d228ed176ee2bf",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push/hot-code-push.js": "1882946a1aeaa1d69f8911ec179e319d0b1c0889"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push/hot-code-push-tests.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push/hot-code-push.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "hot-code-push-tests.js",
+            "hot-code-push.js",
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push/package.js": "2242463d55d53652ff4d1d2735b8d40605283526",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push/hot-code-push-tests.js": "fd08bcb7f4e54a4dc1cb4ae512d228ed176ee2bf",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push/hot-code-push.js": "1882946a1aeaa1d69f8911ec179e319d0b1c0889"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push/hot-code-push-tests.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push/hot-code-push.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "hot-code-push-tests.js",
+            "hot-code-push.js",
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push/package.js": "2242463d55d53652ff4d1d2735b8d40605283526"
+    },
+    "potentiallyUnusedFiles": [],
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "hot-code-push": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/hot-code-push"
+    },
+    "meteor": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

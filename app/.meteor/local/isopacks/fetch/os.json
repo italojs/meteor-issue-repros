@@ -1,0 +1,88 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "fetch",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "modules"
+    },
+    {
+      "package": "modern-browsers"
+    },
+    {
+      "package": "promise"
+    }
+  ],
+  "resources": [
+    {
+      "type": "asset",
+      "file": "os/packages/fetch/fetch.d.ts",
+      "length": 270,
+      "offset": 0,
+      "servePath": "/packages/fetch/fetch.d.ts",
+      "path": "fetch.d.ts",
+      "hash": "586dbf2f2d31bc6ec0fbdaf41dbd547cf712cb83"
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/server.js",
+      "length": 984,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "server.js",
+      "hash": "5ea10b7b79ed32b240ba8bb9a1f2410be73e544e",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/legacy.js",
+      "length": 388,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "legacy.js",
+      "hash": "4de7c8b78dcc18d2683c90e21339dbc9d2453bbf",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/modern.js",
+      "length": 362,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "modern.js",
+      "hash": "1f60d81b8a3add219d9c449d59733a82fb1b30c0",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/tests/main.js",
+      "length": 492,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "tests/main.js",
+      "hash": "405964dd8bef17cf16da6e6a7bf9668631db43a9",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

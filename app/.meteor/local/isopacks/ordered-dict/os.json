@@ -1,0 +1,44 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "OrderedDict",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/ordered_dict.js",
+      "length": 5171,
+      "offset": 0,
+      "path": "ordered_dict.js",
+      "hash": "01e55c5ea2c0bb5a05d63425da17b2160e30b393",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/ordered-dict-tests.js",
+      "length": 7557,
+      "offset": 0,
+      "path": "ordered-dict-tests.js",
+      "hash": "eefbb4e56afd9899cb8dc914e1fb92576f346703",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

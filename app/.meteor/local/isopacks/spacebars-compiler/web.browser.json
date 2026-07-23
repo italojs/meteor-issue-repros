@@ -1,0 +1,154 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "SpacebarsCompiler",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript",
+      "constraint": "0.16.9"
+    },
+    {
+      "package": "htmljs",
+      "constraint": "2.0.2"
+    },
+    {
+      "package": "html-tools",
+      "constraint": "2.0.1"
+    },
+    {
+      "package": "blaze-tools",
+      "constraint": "2.0.1"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/preamble.js",
+      "length": 501,
+      "offset": 0,
+      "path": "preamble.js",
+      "hash": "bd4208664de657593950b3935c763c0963ca3f20",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/codegen.js",
+      "length": 14734,
+      "offset": 0,
+      "path": "codegen.js",
+      "hash": "aa4e7a013bc70e94d6619f6b786f3778f838f800",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/compile_tests.js",
+      "length": 5053,
+      "offset": 0,
+      "path": "compile_tests.js",
+      "hash": "272be877f2fb59a7a2a6fc44192e50d0d3fbcd12",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/compiler.js",
+      "length": 4067,
+      "offset": 0,
+      "path": "compiler.js",
+      "hash": "39a34ed74e0f6b3d15e143e13252bf01c4e9114b",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/compiler_output_tests.js",
+      "length": 7246,
+      "offset": 0,
+      "path": "compiler_output_tests.js",
+      "hash": "7c016493afc15daf5e28d0e72b65954d66f170bc",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/optimizer.js",
+      "length": 6434,
+      "offset": 0,
+      "path": "optimizer.js",
+      "hash": "bafa158e34d3555fce57caaa5514cc6cb12a352d",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/react.js",
+      "length": 1978,
+      "offset": 0,
+      "path": "react.js",
+      "hash": "b558ecdcceed6852dd4fdd14c377dee1bd024c41",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/spacebars_tests.js",
+      "length": 12662,
+      "offset": 0,
+      "path": "spacebars_tests.js",
+      "hash": "db7946c87181803f2ca440e4a3f53d11cdf0f414",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/templatetag.js",
+      "length": 17527,
+      "offset": 0,
+      "path": "templatetag.js",
+      "hash": "3b4bef1538f32dd1edaba6b208cd7ba8ac705375",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/whitespace.js",
+      "length": 2230,
+      "offset": 0,
+      "path": "whitespace.js",
+      "hash": "6942c574348ae2b9bc2c67a70a600b8a0a552066",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

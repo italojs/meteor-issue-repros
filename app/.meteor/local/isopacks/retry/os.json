@@ -1,0 +1,47 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "Retry",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    },
+    {
+      "package": "random"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/retry.js",
+      "length": 1840,
+      "offset": 0,
+      "path": "retry.js",
+      "hash": "23424b06fd43e8715ed298f01da58206587a757c",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/retry-tests.js",
+      "length": 2915,
+      "offset": 0,
+      "path": "retry-tests.js",
+      "hash": "558b874735e6b1f06054854e7033b04e585e5f6d",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

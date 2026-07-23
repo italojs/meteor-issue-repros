@@ -1,0 +1,135 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/tools-core.js",
+      "length": 238,
+      "offset": 0,
+      "path": "tools-core.js",
+      "hash": "69a0b2ce5959e62c798281860a39665b2356a2e1",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/lib/git.js",
+      "length": 3930,
+      "offset": 0,
+      "path": "lib/git.js",
+      "hash": "eee1966d7a83c5a7a788aac3b921cdf47a412856",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/lib/global-state.js",
+      "length": 1340,
+      "offset": 0,
+      "path": "lib/global-state.js",
+      "hash": "3730dfb1e66687b185709dcf5c9382a8ae4de4b5",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/lib/ignore.js",
+      "length": 2903,
+      "offset": 0,
+      "path": "lib/ignore.js",
+      "hash": "b1a1caeab314a5666345a72135af0d0cabe93df9",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/lib/log.js",
+      "length": 2140,
+      "offset": 0,
+      "path": "lib/log.js",
+      "hash": "e85922b8b19296a6ed3a901cacf972af93c74616",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/lib/meteor.js",
+      "length": 17986,
+      "offset": 0,
+      "path": "lib/meteor.js",
+      "hash": "61145e87e1f10534e50ca382fce18868602b8a87",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/lib/npm.js",
+      "length": 17646,
+      "offset": 0,
+      "path": "lib/npm.js",
+      "hash": "4dc7438b29732e394f82d91313c20234289ef026",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/lib/process.js",
+      "length": 6909,
+      "offset": 0,
+      "path": "lib/process.js",
+      "hash": "5d18d3925c3cdeaee7738b4c2ef390036a6a45db",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/lib/string.js",
+      "length": 1562,
+      "offset": 0,
+      "path": "lib/string.js",
+      "hash": "9c721211d07d10289ede95aad5b9ff1137a5fce2",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/tests/meteor_tests.js",
+      "length": 5371,
+      "offset": 0,
+      "path": "tests/meteor_tests.js",
+      "hash": "19b1b0ac00da6c92e42e21958b1d8f35a70a1a71",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

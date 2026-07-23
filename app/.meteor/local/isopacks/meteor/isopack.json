@@ -1,0 +1,27 @@
+{
+  "isopack-2": {
+    "name": "meteor",
+    "summary": "Core Meteor environment",
+    "version": "2.3.1",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": [
+      {
+        "name": "basicFileTypes",
+        "arch": "os",
+        "path": "plugin.basicFileTypes.os/program.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "isopack-2": {
+    "name": "socket-stream-client",
+    "summary": "Provides the ClientStream abstraction used by ddp-client",
+    "version": "0.7.0",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": []
+  }
+}

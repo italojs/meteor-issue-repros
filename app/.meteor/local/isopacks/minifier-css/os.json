@@ -1,0 +1,69 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "CssTools",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/minifier.js",
+      "length": 10591,
+      "offset": 0,
+      "path": "minifier.js",
+      "hash": "71b56f46eb39ccfef59506920ea45b249ffad54c",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/minifier-async-tests.js",
+      "length": 1529,
+      "offset": 0,
+      "path": "minifier-async-tests.js",
+      "hash": "1b53299a9adc0b75907705f0db670b800baa9bb3",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/minifier-tests.js",
+      "length": 5165,
+      "offset": 0,
+      "path": "minifier-tests.js",
+      "hash": "9a6047f94be7a801448901b6b9fb3d14a595fec2",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/urlrewriting-tests.js",
+      "length": 8628,
+      "offset": 0,
+      "path": "urlrewriting-tests.js",
+      "hash": "e90ebed97bb915caf79a79715fd23bbca2618c2b",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

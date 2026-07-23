@@ -1,0 +1,56 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "Facts",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/facts_base_common.js",
+      "length": 164,
+      "offset": 0,
+      "path": "facts_base_common.js",
+      "hash": "83d77b099d1a17affa04113dedb1cd53469f83d6",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/facts_base.tests.js",
+      "length": 7314,
+      "offset": 0,
+      "path": "facts_base.tests.js",
+      "hash": "5f89351e64c67f977c3b31cf537049e6ed784d7d",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/facts_base_server.js",
+      "length": 2512,
+      "offset": 0,
+      "path": "facts_base_server.js",
+      "hash": "89e6a1c7efcdcbd5d2a8052682af6c42928d439a",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

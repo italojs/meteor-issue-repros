@@ -1,0 +1,44 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "Base64",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/base64.js",
+      "length": 3291,
+      "offset": 0,
+      "path": "base64.js",
+      "hash": "1ce84fb11b50447ebb9df29fbb15746bd32fcdf8",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/base64_test.js",
+      "length": 7654,
+      "offset": 0,
+      "path": "base64_test.js",
+      "hash": "ceb15af14ab5fde1f5a211e3d42d93f083f09521",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

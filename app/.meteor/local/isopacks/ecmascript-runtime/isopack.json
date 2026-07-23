@@ -1,0 +1,21 @@
+{
+  "isopack-2": {
+    "name": "ecmascript-runtime",
+    "summary": "Polyfills for new ECMAScript 2015 APIs like Map and Set",
+    "version": "0.8.3",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": []
+  }
+}

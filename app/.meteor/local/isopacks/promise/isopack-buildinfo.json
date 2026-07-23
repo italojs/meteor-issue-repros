@@ -1,0 +1,148 @@
+{
+  "builtBy": "meteor/34",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/package.js": "d3dafd72cc6e4cb24d096e5e9c9eeb8f1a07776d",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/package.js": "701afdba4f974ccdf8edcf6a9f1d38d6a8ae3ac3",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/package.js": "0f17ed972002c1a20e124bd97b5cd63bc6f52bb4",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/.npm/package/npm-shrinkwrap.json": "7530edd1f6ca97bf19f0f2e1f18a55753a8e7f61",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/promise.d.ts": "b4ac5a65dcf42bdf727fe69442b1c5c7a034ca5e",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/modern.js": "ae15b2311a67d2cab0e78ac9df88f38a72bb2106",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/server.js": "fc2473f5c250b83723c5e5a47cf260cdd78e2265",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/client.js": "8d101a402cf07762c5f0d53767fa1bbec903abea",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/extensions.js": "8b892725eddde797c1234eb48d9d26983d9af7d6",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/legacy.js": "22c9978055f32cec6e276a31412abb3a01923f71",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/promise-tests.js": "4e98f07a7d015dd3f08296cb003906384c9ed754"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/modern.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/server.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/client.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/extensions.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/legacy.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/promise-tests.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "client.js",
+            "extensions.js",
+            "legacy.js",
+            "modern.js",
+            "package.js",
+            "promise-tests.js",
+            "server.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/package.js": "d3dafd72cc6e4cb24d096e5e9c9eeb8f1a07776d",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/package.js": "701afdba4f974ccdf8edcf6a9f1d38d6a8ae3ac3",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/package.js": "0f17ed972002c1a20e124bd97b5cd63bc6f52bb4",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/.npm/package/npm-shrinkwrap.json": "7530edd1f6ca97bf19f0f2e1f18a55753a8e7f61",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/promise.d.ts": "b4ac5a65dcf42bdf727fe69442b1c5c7a034ca5e",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/modern.js": "ae15b2311a67d2cab0e78ac9df88f38a72bb2106",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/client.js": "8d101a402cf07762c5f0d53767fa1bbec903abea",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/extensions.js": "8b892725eddde797c1234eb48d9d26983d9af7d6",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/legacy.js": "22c9978055f32cec6e276a31412abb3a01923f71",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/promise-tests.js": "4e98f07a7d015dd3f08296cb003906384c9ed754",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/server.js": "fc2473f5c250b83723c5e5a47cf260cdd78e2265"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/modern.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/client.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/extensions.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/legacy.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/promise-tests.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/server.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "client.js",
+            "extensions.js",
+            "legacy.js",
+            "modern.js",
+            "package.js",
+            "promise-tests.js",
+            "server.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/package.js": "d3dafd72cc6e4cb24d096e5e9c9eeb8f1a07776d"
+    },
+    "potentiallyUnusedFiles": [],
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "promise": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise"
+    },
+    "meteor": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor"
+    },
+    "modules": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules"
+    },
+    "modern-browsers": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

@@ -1,0 +1,47 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "IdMap",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    },
+    {
+      "package": "ejson"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/id-map.js",
+      "length": 2116,
+      "offset": 0,
+      "path": "id-map.js",
+      "hash": "fbd9ccc419fa1e0895cf867601741e7436c9553a",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/id-map-tests.js",
+      "length": 5269,
+      "offset": 0,
+      "path": "id-map-tests.js",
+      "hash": "17e799c198f293e72573b901fab8c1129a69645f",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "builtBy": "meteor/34",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/package.js": "aacae883bf8b88dff062aeb8298bbe75fc9b9cd1",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/.npm/package/npm-shrinkwrap.json": "42a16976845e1e603d77312efd1856cbf920cced",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/runtime-tests.js": "297a44b442de78533e18dd2b1b404067ea5071ac",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/runtime.js": "389e875f089a003db1f1e851bf362d6a1c351435"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/runtime-tests.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/runtime.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "package.js",
+            "runtime-tests.js",
+            "runtime.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/package.js": "aacae883bf8b88dff062aeb8298bbe75fc9b9cd1",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/.npm/package/npm-shrinkwrap.json": "42a16976845e1e603d77312efd1856cbf920cced",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/runtime-tests.js": "297a44b442de78533e18dd2b1b404067ea5071ac",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/runtime.js": "389e875f089a003db1f1e851bf362d6a1c351435"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/runtime-tests.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/runtime.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "package.js",
+            "runtime-tests.js",
+            "runtime.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/package.js": "aacae883bf8b88dff062aeb8298bbe75fc9b9cd1"
+    },
+    "potentiallyUnusedFiles": [],
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "ecmascript-runtime": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime"
+    },
+    "meteor": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

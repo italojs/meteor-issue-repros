@@ -1,0 +1,91 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "MaxHeap",
+      "testOnly": false
+    },
+    {
+      "name": "MinHeap",
+      "testOnly": false
+    },
+    {
+      "name": "MinMaxHeap",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "id-map"
+    },
+    {
+      "package": "ecmascript"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/binary-heap.js",
+      "length": 130,
+      "offset": 0,
+      "path": "binary-heap.js",
+      "hash": "9436414ecfa7dd77c41b85b50b9682ee0c48a024",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/binary-heap-tests.js",
+      "length": 12302,
+      "offset": 0,
+      "path": "binary-heap-tests.js",
+      "hash": "7615e7bd54164e2d2990b5220ce6a8841e434437",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/max-heap.js",
+      "length": 5498,
+      "offset": 0,
+      "path": "max-heap.js",
+      "hash": "d446ad628916f2ceee759fdcab8fbfcb80e7a2b5",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/min-heap.js",
+      "length": 314,
+      "offset": 0,
+      "path": "min-heap.js",
+      "hash": "a8d5f3f90bf0fa6dd848737d987617174efde7ca",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/min-max-heap.js",
+      "length": 1368,
+      "offset": 0,
+      "path": "min-max-heap.js",
+      "hash": "0e7db5ba6b8f46591fe87f0b6389e1a3dcb29adb",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "CachingHtmlCompiler",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "caching-compiler",
+      "constraint": "2.0.0"
+    },
+    {
+      "package": "ecmascript",
+      "constraint": "0.16.9"
+    },
+    {
+      "package": "templating-tools",
+      "constraint": "2.0.1"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/caching-html-compiler.js",
+      "length": 4802,
+      "offset": 0,
+      "path": "caching-html-compiler.js",
+      "hash": "ebe169a6dd600465efbc625d1878dca8c0836eb3",
+      "fileOptions": {
+        "lazy": false
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

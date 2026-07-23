@@ -1,0 +1,21 @@
+{
+  "isopack-2": {
+    "name": "react-fast-refresh",
+    "summary": "Automatically update React components with HMR",
+    "version": "0.3.0",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": []
+  }
+}

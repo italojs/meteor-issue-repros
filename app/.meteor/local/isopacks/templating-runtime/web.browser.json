@@ -1,0 +1,107 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "Template",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "blaze",
+      "constraint": "3.0.3"
+    },
+    {
+      "package": "spacebars",
+      "constraint": "2.0.1"
+    },
+    {
+      "package": "ecmascript",
+      "constraint": "0.16.9"
+    },
+    {
+      "package": "templating-compiler",
+      "constraint": "2.0.1"
+    }
+  ],
+  "implies": [
+    {
+      "package": "meteor",
+      "constraint": ""
+    },
+    {
+      "package": "blaze",
+      "constraint": "3.0.3"
+    },
+    {
+      "package": "spacebars",
+      "constraint": "2.0.1"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/templating.js",
+      "length": 6072,
+      "offset": 0,
+      "path": "templating.js",
+      "hash": "36cd586717d0e05274bbd5c8039eef6c0f2b771f",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "html",
+      "file": "web.browser/dynamic.html",
+      "length": 1065,
+      "offset": 0,
+      "path": "dynamic.html",
+      "hash": "4e91bb8ca9b5f9e7d8946294f7992a2b4f137341",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/dynamic.js",
+      "length": 1048,
+      "offset": 0,
+      "path": "dynamic.js",
+      "hash": "8d8bd666fc8662c1da4bfd5df727a3ce1b4d52eb",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "html",
+      "file": "web.browser/dynamic_tests.html",
+      "length": 1672,
+      "offset": 0,
+      "path": "dynamic_tests.html",
+      "hash": "1982d4a46096fe02db08fa8b930f353044f25e1b",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/dynamic_tests.js",
+      "length": 6937,
+      "offset": 0,
+      "path": "dynamic_tests.js",
+      "hash": "2e264d2982ae649702554595d6733f94a723e899",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

@@ -1,31 +1,106 @@
-# meteor-issue-repros
+# meteor/meteor#14600 — change-stream fence test CI regression (release-3.5.1)
 
-Reproduções mínimas de issues do [meteor/meteor](https://github.com/meteor/meteor).
+Upstream issue: https://github.com/meteor/meteor/issues/14600
 
-**Uma branch por issue** — `issue-<num>`. A `main` é só este índice.
+This is a **CI regression on the `release-3.5.1` branch**, not an app-level bug,
+so the reproduction is "run the change-stream tinytests on `release-3.5.1`" —
+there is no separate app to build.
 
-| Issue | Branch | PR |
-|-------|--------|----|
-| [#13489](https://github.com/meteor/meteor/issues/13489) — `Meteor.settings.public` runtime updates not sent to new clients | [`issue-13489`](https://github.com/italojs/meteor-issue-repros/tree/issue-13489) | [italojs/meteor-italo-private#20](https://github.com/italojs/meteor-italo-private/pull/20) |
-| [#13490](https://github.com/meteor/meteor/issues/13490) — SIGTERM listener leaks dev server instances | [`issue-13490`](https://github.com/italojs/meteor-issue-repros/tree/issue-13490) | [italojs/meteor-italo-private#21](https://github.com/italojs/meteor-italo-private/pull/21) |
-| [#12759](https://github.com/meteor/meteor/issues/12759) — client leaks a global `require` | [`issue-12759`](https://github.com/italojs/meteor-issue-repros/tree/issue-12759) | [italojs/meteor-italo-private#22](https://github.com/italojs/meteor-italo-private/pull/22) |
-| [#12718](https://github.com/meteor/meteor/issues/12718) — extensionless import resolves `.css` over `.tsx` | [`issue-12718`](https://github.com/italojs/meteor-issue-repros/tree/issue-12718) | [italojs/meteor-italo-private#23](https://github.com/italojs/meteor-italo-private/pull/23) |
-| [#13245](https://github.com/meteor/meteor/issues/13245) — minify stats parse failure aborts the production build | [`issue-13245`](https://github.com/italojs/meteor-issue-repros/tree/issue-13245) | [italojs/meteor-italo-private#24](https://github.com/italojs/meteor-italo-private/pull/24) |
-| [#12164](https://github.com/meteor/meteor/issues/12164) — wrong error importing a missing file from an installed package | [`issue-12164`](https://github.com/italojs/meteor-issue-repros/tree/issue-12164) | [italojs/meteor-italo-private#25](https://github.com/italojs/meteor-italo-private/pull/25) |
-| [#12029](https://github.com/meteor/meteor/issues/12029) — native driver ObjectId unusable on the client | [`issue-12029`](https://github.com/italojs/meteor-issue-repros/tree/issue-12029) | [italojs/meteor-italo-private#26](https://github.com/italojs/meteor-italo-private/pull/26) |
-| [#12688](https://github.com/meteor/meteor/issues/12688) — positional (`$`) projection crashes change-stream subscription | [`issue-12688`](https://github.com/italojs/meteor-issue-repros/tree/issue-12688) | [italojs/meteor-italo-private#27](https://github.com/italojs/meteor-italo-private/pull/27) |
-| [#12172](https://github.com/meteor/meteor/issues/12172) — installer creates `~/.bash_profile`, shadowing `~/.profile` | [`issue-12172`](https://github.com/italojs/meteor-issue-repros/tree/issue-12172) | [italojs/meteor-italo-private#28](https://github.com/italojs/meteor-italo-private/pull/28) |
-| [#13276](https://github.com/meteor/meteor/issues/13276) — build crashes (`ERR_FS_FILE_TOO_LARGE`) on >2 GiB bundle files | [`issue-13276`](https://github.com/italojs/meteor-issue-repros/tree/issue-13276) | [italojs/meteor-italo-private#29](https://github.com/italojs/meteor-italo-private/pull/29) |
-| [#12421](https://github.com/meteor/meteor/issues/12421) — iOS Safari version parsed from Safari token → wrong legacy bundle | [`issue-12421`](https://github.com/italojs/meteor-issue-repros/tree/issue-12421) | [italojs/meteor-italo-private#30](https://github.com/italojs/meteor-italo-private/pull/30) |
+## Symptom
 
-- [#11918](https://github.com/meteor/meteor/issues/11918) — RangeError reading unibuild resource at offset — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-11918) — PR italojs/meteor-italo-private#42
+The `test-packages (changeStreams,polling)` job fails deterministically:
 
-- [#12772](https://github.com/meteor/meteor/issues/12772) — no Content-Length on built JS/CSS — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-12772) — PR italojs/meteor-italo-private#43
+```
+tinytest - changestream- _waitUntilCaughtUp still waits for its own connection (#14600) : FAIL
+  details: { type: "string_equal",
+             message: "a ts for our own connection and collection must still block the wait",
+             expected: "still-waiting", actual: "resolved" }
+```
 
-- [#13653](https://github.com/meteor/meteor/issues/13653) — infinite reload loop with cross-origin DDP_DEFAULT_CONNECTION_URL — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-13653) — PR italojs/meteor-italo-private#44
+Green on 2026-07-20/07-21, red from 2026-07-22 onward.
 
-- [#11808](https://github.com/meteor/meteor/issues/11808) — installer should repair PATH when already installed — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-11808) — PR italojs/meteor-italo-private#45
+## Which change broke it
 
-- [#14594](https://github.com/meteor/meteor/issues/14594) — Invalid URL crashes the server via the SockJS transport — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-14594) — upstream PR meteor/meteor#14598 (private #46)
+Two upstream PRs interact:
 
-- [#14604](https://github.com/meteor/meteor/issues/14604) — change-stream observe driver stuck in an infinite restart loop after ChangeStreamHistoryLost (error 286) — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-14604) — PR italojs/meteor-italo-private#48
+- **#14602** (merged 07-20) added the test + the fence-key-by-connection fix for
+  issue #14600. The test asserts `_waitUntilCaughtUp(ownFence)` still **blocks**
+  on a target ts one hour in the future, built as a plain `{ t, i }` object.
+- **#14564** (merged 07-22, "change-stream fence/multiplexer queue deadlock")
+  added a caught-up-floor **seed**: on driver start it pings the server and
+  `_setLastProcessedOperationTime(pingRes.operationTime)`.
+
+Before #14564, `_lastProcessedOperationTime` was `null` at this point, so the
+guard `if (this._lastProcessedOperationTime && compare(...) >= 0) return;` was
+skipped and the wait parked (→ "still-waiting"). The seed makes the field
+non-null, so the comparison now runs — and exposes the root-cause bug.
+
+## Root cause
+
+`compareOperationTimes(a, b)` in `packages/mongo/mongo_common.js` was:
+
+```js
+new MongoDB.Timestamp(a).compare(b);   // only `a` wrapped
+```
+
+`MongoDB.Timestamp#compare` never reads `.t`/`.i` off a **plain object**, so a
+`{ t, i }` second operand mis-compares. The function's own JSDoc documents
+`{t,i}` as an accepted form for `opTime2`, so this violates its contract.
+
+Empirically (mongodb 6.16.0 bson), with `now = Math.floor(Date.now()/1000)`:
+
+```
+compareOperationTimes(Timestamp(now), { t: now+3600, i: 1 })      = 1    // ≥0 → resolves early (BUG)
+compareOperationTimes(Timestamp(now), Timestamp({t: now+3600}))   = -1   // <0 → blocks (correct)
+```
+
+Production is unaffected: real fence target ts values are always BSON
+`Timestamp`s (`session.operationTime`), and all four callers pass real
+Timestamps. Only the test passes the documented `{t,i}` object form.
+
+## How to reproduce locally
+
+Requires a `meteor/meteor` checkout. The dev_bundle Mongo 7 runs as a
+single-node replica set, so change streams work locally out of the box.
+
+```bash
+# 1. Check out release-3.5.1 (7422f270d9 at time of writing) in a worktree,
+#    symlinking dev_bundle from a built checkout:
+git worktree add --detach /tmp/cs-repro origin/release-3.5.1
+ln -s /path/to/built/meteor-source/dev_bundle /tmp/cs-repro/dev_bundle
+cd /tmp/cs-repro
+
+# 2. Run the mongo package tests under the change-streams reactivity order
+#    (the changestream_*_tests self-skip unless METEOR_REACTIVITY_ORDER
+#    starts with changeStreams):
+METEOR_REACTIVITY_ORDER=changeStreams METEOR_HEADLESS=true METEOR_NO_DEPRECATION=true \
+  ./packages/test-in-console/run.sh mongo
+```
+
+Watch for:
+
+```
+changestream- _waitUntilCaughtUp still waits for its own connection (#14600) : FAIL
+```
+
+## Fix and after-evidence
+
+One-line change in `packages/mongo/mongo_common.js` — wrap both operands:
+
+```js
+new MongoDB.Timestamp(opTime1).compare(new MongoDB.Timestamp(opTime2));
+```
+
+Re-running the same suite with the fix applied:
+
+```
+changestream- _waitUntilCaughtUp returns fast when fence ts is already processed  : OK
+changestream- _waitUntilCaughtUp ignores annotation from another connection (#14600) : OK
+changestream- _waitUntilCaughtUp still waits for its own connection (#14600)       : OK   ← was FAIL
+changestream- a second connection annotates its own fence key (#14600)            : OK
+changestream- stop() releases a fence waiter parked in _waitUntilCaughtUp (#14452) : OK
+=> 0 change-stream failures
+```
+
+Real-vs-real Timestamp comparisons are byte-identical before/after, so there is
+no production behavior change.

@@ -1,0 +1,41 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "ReactiveVar",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "tracker"
+    }
+  ],
+  "resources": [
+    {
+      "type": "asset",
+      "file": "os/packages/reactive-var/reactive-var.d.ts",
+      "length": 1039,
+      "offset": 0,
+      "servePath": "/packages/reactive-var/reactive-var.d.ts",
+      "path": "reactive-var.d.ts",
+      "hash": "520ed838578806b03853cfab55df3fcef456e8ed"
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/reactive-var.js",
+      "length": 3609,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "reactive-var.js",
+      "hash": "74bd1a6ba6770dd28ec9028bc0f3e8166f619816",
+      "fileOptions": {
+        "lazy": false
+      }
+    }
+  ]
+}

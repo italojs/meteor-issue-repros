@@ -1,0 +1,43 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "NpmModuleMongodb",
+      "testOnly": false
+    },
+    {
+      "name": "NpmModuleMongodbVersion",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    }
+  ],
+  "resources": [
+    {
+      "type": "asset",
+      "file": "os/packages/npm-mongo/index.d.ts",
+      "length": 146,
+      "offset": 0,
+      "servePath": "/packages/npm-mongo/index.d.ts",
+      "path": "index.d.ts",
+      "hash": "b1843a4931ffd3613a8f1a5eb09c21afcc1997c3"
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/wrapper.js",
+      "length": 2019,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "wrapper.js",
+      "hash": "39bbb6f6131bdf24a6553e911268b41000961274",
+      "fileOptions": {
+        "lazy": false
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

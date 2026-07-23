@@ -1,0 +1,128 @@
+{
+  "builtBy": "meteor/34",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/package.js": "303ea9b8a5b398cc813b92ac6733939655f69930",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/package.js": "701afdba4f974ccdf8edcf6a9f1d38d6a8ae3ac3",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/package.js": "d3dafd72cc6e4cb24d096e5e9c9eeb8f1a07776d",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/.npm/package/npm-shrinkwrap.json": "0c0ad8b9a6dfd3c3a3484ead2b20578c812e196f",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/inter-process-messaging.js": "9f97de41a045992cad62b6e0ec4ebf920841a6d1",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/tests.js": "2d7cf9fef01ceaea69b316c564280f0cf32553d6",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/types.js": "851883187c3b5ed9a9ca2057aafadb3cf0b04c45"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/inter-process-messaging.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/tests.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/types.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "inter-process-messaging.js",
+            "package.js",
+            "tests.js",
+            "types.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/package.js": "303ea9b8a5b398cc813b92ac6733939655f69930",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/package.js": "701afdba4f974ccdf8edcf6a9f1d38d6a8ae3ac3",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/package.js": "d3dafd72cc6e4cb24d096e5e9c9eeb8f1a07776d",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/.npm/package/npm-shrinkwrap.json": "0c0ad8b9a6dfd3c3a3484ead2b20578c812e196f",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/inter-process-messaging.js": "9f97de41a045992cad62b6e0ec4ebf920841a6d1",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/tests.js": "2d7cf9fef01ceaea69b316c564280f0cf32553d6",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/types.js": "851883187c3b5ed9a9ca2057aafadb3cf0b04c45"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/inter-process-messaging.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/tests.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/types.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "inter-process-messaging.js",
+            "package.js",
+            "tests.js",
+            "types.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/package.js": "303ea9b8a5b398cc813b92ac6733939655f69930"
+    },
+    "potentiallyUnusedFiles": [],
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "inter-process-messaging": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging"
+    },
+    "meteor": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor"
+    },
+    "modules": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules"
+    },
+    "promise": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

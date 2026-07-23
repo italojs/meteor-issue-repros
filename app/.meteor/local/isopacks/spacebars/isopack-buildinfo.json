@@ -1,0 +1,132 @@
+{
+  "builtBy": "meteor/34",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars/package.js": "8851711b557c175ec1b016c4d1ccf52501e660e0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/observe-sequence/package.js": "4cb18dbc86005001649df85887b803b1b183a59f",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/tracker/package.js": "633e6a73dc185568ee9bdca0a1fec3692d3f2fb9",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/htmljs/package.js": "9cec62ba0c9791ac5d34ef993478b4d37c81742b",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/blaze/package.js": "44d1cf5361e5b2f302e80925be7647ee06c62404",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars/spacebars-runtime.js": "21eb76ce202e7588b6e192a51a61d94ddd865f11",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars/spacebars_tests.js": "9c364593327e8b914606fa353a0df521aa9bd0f5"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars/spacebars-runtime.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars/spacebars_tests.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "package.js",
+            "spacebars-runtime.js",
+            "spacebars_tests.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars/package.js": "8851711b557c175ec1b016c4d1ccf52501e660e0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/observe-sequence/package.js": "4cb18dbc86005001649df85887b803b1b183a59f",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/tracker/package.js": "633e6a73dc185568ee9bdca0a1fec3692d3f2fb9",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/htmljs/package.js": "9cec62ba0c9791ac5d34ef993478b4d37c81742b",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/blaze/package.js": "44d1cf5361e5b2f302e80925be7647ee06c62404",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars/spacebars-runtime.js": "21eb76ce202e7588b6e192a51a61d94ddd865f11",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars/spacebars_tests.js": "9c364593327e8b914606fa353a0df521aa9bd0f5"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars/spacebars-runtime.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars/spacebars_tests.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "package.js",
+            "spacebars-runtime.js",
+            "spacebars_tests.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars/package.js": "8851711b557c175ec1b016c4d1ccf52501e660e0"
+    },
+    "potentiallyUnusedFiles": [],
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "spacebars": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/spacebars"
+    },
+    "meteor": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor"
+    },
+    "observe-sequence": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/observe-sequence"
+    },
+    "tracker": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/tracker"
+    },
+    "htmljs": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/htmljs"
+    },
+    "blaze": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/non-core/blaze/packages/blaze"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

@@ -1,0 +1,114 @@
+{
+  "builtBy": "meteor/34",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/package.js": "896b5685f7efa9cf2f1b66c023801646f3012575",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/installer.js": "2ba491250c590905268bd2af2d2e65342b278733",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/legacy.js": "520b12a04cc19b91082019e506b6fff51d5ae357",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/modern.js": "98efb6807b55b127a457e0f9d862934726e6cf92"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/installer.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/legacy.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/modern.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "installer.js",
+            "legacy.js",
+            "modern.js",
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/package.js": "896b5685f7efa9cf2f1b66c023801646f3012575",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/installer.js": "2ba491250c590905268bd2af2d2e65342b278733",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/modern.js": "98efb6807b55b127a457e0f9d862934726e6cf92",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/legacy.js": "520b12a04cc19b91082019e506b6fff51d5ae357"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/installer.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/modern.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/legacy.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "installer.js",
+            "legacy.js",
+            "modern.js",
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot/package.js": "896b5685f7efa9cf2f1b66c023801646f3012575"
+    },
+    "potentiallyUnusedFiles": [],
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "modules-runtime-hot": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules-runtime-hot"
+    },
+    "meteor": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

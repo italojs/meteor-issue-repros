@@ -1,0 +1,1 @@
+{"code":"module.link('./minimongo_common.js');\n","map":{"version":3,"sources":["packages/minimongo/minimongo_client.js"],"sourcesContent":["import './minimongo_common.js';\n"],"names":[],"mappings":"AAAA,OAAO,wBAAwB","file":"packages/minimongo/minimongo_client.js.map"},"sourceType":"module"}

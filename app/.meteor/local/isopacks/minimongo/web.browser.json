@@ -1,0 +1,216 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "LocalCollection",
+      "testOnly": false
+    },
+    {
+      "name": "Minimongo",
+      "testOnly": false
+    },
+    {
+      "name": "MinimongoTest",
+      "testOnly": true
+    },
+    {
+      "name": "MinimongoError",
+      "testOnly": true
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "diff-sequence"
+    },
+    {
+      "package": "ecmascript"
+    },
+    {
+      "package": "ejson"
+    },
+    {
+      "package": "geojson-utils"
+    },
+    {
+      "package": "id-map"
+    },
+    {
+      "package": "mongo-id"
+    },
+    {
+      "package": "ordered-dict"
+    },
+    {
+      "package": "random"
+    },
+    {
+      "package": "tracker"
+    },
+    {
+      "package": "mongo-decimal",
+      "weak": true
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/minimongo_client.js",
+      "length": 32,
+      "offset": 0,
+      "path": "minimongo_client.js",
+      "hash": "d78205dd8cd228cb31e8b79b29eb73939cc0cee3",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/common.js",
+      "length": 49789,
+      "offset": 0,
+      "path": "common.js",
+      "hash": "14d14d0588e239421fa57460173c4c4d75b36e8b",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/constants.js",
+      "length": 6861,
+      "offset": 0,
+      "path": "constants.js",
+      "hash": "98a628eebcbc590ce63a3b579b09f986fc6a08f3",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/cursor.js",
+      "length": 18775,
+      "offset": 0,
+      "path": "cursor.js",
+      "hash": "19c4d6842213de92b24a23bbc6ddbbc82840bc7e",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/local_collection.js",
+      "length": 68716,
+      "offset": 0,
+      "path": "local_collection.js",
+      "hash": "17db2feedc5250fa6fe2ae4803022dabb8800138",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/matcher.js",
+      "length": 12282,
+      "offset": 0,
+      "path": "matcher.js",
+      "hash": "23391804464a90ee158532641514d65d52b3cdbf",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/minimongo_common.js",
+      "length": 241,
+      "offset": 0,
+      "path": "minimongo_common.js",
+      "hash": "b0244b83cc87597dcec7794fa6c612c37c8ea9df",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/minimongo_server.js",
+      "length": 10841,
+      "offset": 0,
+      "path": "minimongo_server.js",
+      "hash": "4ccd2439a85657ea86c60425b8e8d535a0af6297",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/minimongo_tests.js",
+      "length": 14930,
+      "offset": 0,
+      "path": "minimongo_tests.js",
+      "hash": "47346de3f17794982419f35f8a0f0e8d35028880",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/minimongo_tests_client.js",
+      "length": 155944,
+      "offset": 0,
+      "path": "minimongo_tests_client.js",
+      "hash": "fec24896861ab864bf766be42e0ff90f88de71ce",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/minimongo_tests_server.js",
+      "length": 22666,
+      "offset": 0,
+      "path": "minimongo_tests_server.js",
+      "hash": "9a4d04eaf49dbfcb814315f5ef79aca13c18b2b7",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/observe_handle.js",
+      "length": 90,
+      "offset": 0,
+      "path": "observe_handle.js",
+      "hash": "65ade5c036389f59f474a900d4190e7bb19da20f",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/sorter.js",
+      "length": 9753,
+      "offset": 0,
+      "path": "sorter.js",
+      "hash": "883b48c5373c4681a2be74ce6221c8ffedc035a0",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [],
+  "uses": [
+    {
+      "package": "modules"
+    },
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "hot-code-push",
+      "unordered": true
+    },
+    {
+      "package": "ecmascript-runtime-client",
+      "weak": true
+    }
+  ],
+  "implies": [
+    {
+      "package": "modules-runtime-hot",
+      "constraint": "0.14.2"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/hot-api.js",
+      "length": 2830,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "hot-api.js",
+      "hash": "61070f244c2c3f2fc8ff7c43593d993631f94360",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/client.js",
+      "length": 14610,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "client.js",
+      "hash": "984c974cfba765db8e08604f51a2c7b94d1669d9",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/server.js",
+      "length": 345,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "server.js",
+      "hash": "c356c9134ed2b7160b54b476d7318f4b0aeb6c4e",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

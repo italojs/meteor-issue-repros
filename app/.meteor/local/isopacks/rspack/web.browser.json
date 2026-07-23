@@ -1,0 +1,141 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    },
+    {
+      "package": "tools-core"
+    },
+    {
+      "package": "webapp"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/rspack_plugin.js",
+      "length": 11944,
+      "offset": 0,
+      "path": "rspack_plugin.js",
+      "hash": "bedd8c95d4eea4f32a49cfb49edf3668681d257d",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/rspack_server.js",
+      "length": 7064,
+      "offset": 0,
+      "path": "rspack_server.js",
+      "hash": "9318f18c6b409efdcfeb4e883a59825eafdb3cb8",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/rspack_tests.js",
+      "length": 34,
+      "offset": 0,
+      "path": "rspack_tests.js",
+      "hash": "9fa97baa95287e53f2764964161766044af62e0a",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/lib/build-context.js",
+      "length": 27318,
+      "offset": 0,
+      "path": "lib/build-context.js",
+      "hash": "21a2fbc763e88c620653603c8eab9104ca46bf24",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/lib/compilation.js",
+      "length": 8132,
+      "offset": 0,
+      "path": "lib/compilation.js",
+      "hash": "5684f2a06686315eea8e98121a39c733d9aa9b0d",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/lib/config.js",
+      "length": 12935,
+      "offset": 0,
+      "path": "lib/config.js",
+      "hash": "e6c387f5044332e8396c4c40ff2ec5cb9ad58167",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/lib/constants.js",
+      "length": 3819,
+      "offset": 0,
+      "path": "lib/constants.js",
+      "hash": "0a059ebf873eb2b4536e29920e8721b82997e665",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/lib/dependencies.js",
+      "length": 10262,
+      "offset": 0,
+      "path": "lib/dependencies.js",
+      "hash": "5c972613d43e8131e0555cd5bbc6f5ca072c5226",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/lib/logging.js",
+      "length": 3519,
+      "offset": 0,
+      "path": "lib/logging.js",
+      "hash": "a034c4e97f2c4f1af0b30d7baf9c7bc5eeb9b94c",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/lib/processes.js",
+      "length": 23825,
+      "offset": 0,
+      "path": "lib/processes.js",
+      "hash": "1265329531d097ec4228ff1c422b54d67a700309",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ],
+  "node_modules": "npm/dev/node_modules"
+}

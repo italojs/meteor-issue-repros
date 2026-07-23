@@ -1,0 +1,106 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    },
+    {
+      "package": "modern-browsers"
+    },
+    {
+      "package": "retry"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/server.js",
+      "length": 349,
+      "offset": 0,
+      "path": "server.js",
+      "hash": "28bda9927d959c44975f306dab1418dd695e65c5",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/node.js",
+      "length": 6785,
+      "offset": 0,
+      "path": "node.js",
+      "hash": "19151c773427530de37333baa67eb23c0798337f",
+      "fileOptions": {
+        "lazy": true,
+        "mainModule": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/browser.js",
+      "length": 6460,
+      "offset": 0,
+      "path": "browser.js",
+      "hash": "dcf72b8e78b5f5e12a2cf422ede19183ee38eabd",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/client-tests.js",
+      "length": 6637,
+      "offset": 0,
+      "path": "client-tests.js",
+      "hash": "d36e874f233255e7ddfd0367d0fea2781ff736ce",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/common.js",
+      "length": 4614,
+      "offset": 0,
+      "path": "common.js",
+      "hash": "e96f836ee241935a5d781e1599cd07ec51e02aad",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/sockjs-1.6.1-min-.js",
+      "length": 57372,
+      "offset": 0,
+      "path": "sockjs-1.6.1-min-.js",
+      "hash": "e037cc53f1b26076dc52c57d01b3f607f6b53908",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/urls.js",
+      "length": 2728,
+      "offset": 0,
+      "path": "urls.js",
+      "hash": "62fb4dc564362b5ae38a1436a537969f9e740d3d",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

@@ -1,0 +1,22 @@
+{
+  "isopack-2": {
+    "name": "babel-compiler",
+    "summary": "Parser/transpiler for ECMAScript 2015+ syntax",
+    "version": "7.14.1",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": [],
+    "devOnly": true
+  }
+}

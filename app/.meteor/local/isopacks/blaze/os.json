@@ -1,0 +1,241 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "Blaze",
+      "testOnly": false
+    },
+    {
+      "name": "UI",
+      "testOnly": false
+    },
+    {
+      "name": "Handlebars",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "jquery",
+      "constraint": "1.11.9 || 3.0.0",
+      "weak": true
+    },
+    {
+      "package": "tracker",
+      "constraint": "1.3.2"
+    },
+    {
+      "package": "check",
+      "constraint": "1.0.12"
+    },
+    {
+      "package": "observe-sequence",
+      "constraint": "2.0.1"
+    },
+    {
+      "package": "reactive-var",
+      "constraint": "1.0.12"
+    },
+    {
+      "package": "ordered-dict",
+      "constraint": "1.2.0"
+    },
+    {
+      "package": "ecmascript",
+      "constraint": "0.16.9"
+    },
+    {
+      "package": "htmljs",
+      "constraint": "2.0.2"
+    }
+  ],
+  "implies": [
+    {
+      "package": "htmljs",
+      "constraint": "2.0.2"
+    }
+  ],
+  "resources": [
+    {
+      "type": "asset",
+      "file": "os/packages/blaze/blaze.d.ts",
+      "length": 4167,
+      "offset": 0,
+      "servePath": "/packages/blaze/blaze.d.ts",
+      "path": "blaze.d.ts",
+      "hash": "d39dab467bed927fa4bbc1a7fb60857ca9d53ee1"
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/preamble.js",
+      "length": 1424,
+      "offset": 0,
+      "path": "preamble.js",
+      "hash": "9e5a224956b5bc2ebe634c93dc5e519b2930c991",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/exceptions.js",
+      "length": 1862,
+      "offset": 0,
+      "path": "exceptions.js",
+      "hash": "3147466952556c7edcc3e4159d15d5dc4d853ab7",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/view.js",
+      "length": 33435,
+      "offset": 0,
+      "path": "view.js",
+      "hash": "85bc0715074ecba5257ef504289eca8dd13d02e0",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/builtins.js",
+      "length": 14620,
+      "offset": 0,
+      "path": "builtins.js",
+      "hash": "e49677bf1bb52adeb50aa7468db28b07c55d8ec4",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/lookup.js",
+      "length": 9470,
+      "offset": 0,
+      "path": "lookup.js",
+      "hash": "d0c2e6a865ba0bdfbb22eca89137129c0dec1d3f",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/template.js",
+      "length": 19726,
+      "offset": 0,
+      "path": "template.js",
+      "hash": "230541559cbcbc1757826cc28d13f253f4c23945",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/backcompat.js",
+      "length": 466,
+      "offset": 0,
+      "path": "backcompat.js",
+      "hash": "9cc3f3b275bf122537482e7fb9c57c6b2173e243",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/attrs.js",
+      "length": 12720,
+      "offset": 0,
+      "path": "attrs.js",
+      "hash": "bbac53da2d925fc94d63159148f18a0f429f484b",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/dombackend.js",
+      "length": 6084,
+      "offset": 0,
+      "path": "dombackend.js",
+      "hash": "a44981566216f6432e3d6daa35cfd0753c7244d2",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/domrange.js",
+      "length": 15236,
+      "offset": 0,
+      "path": "domrange.js",
+      "hash": "1a822395fb590a7900e74906ce0e9b892083462f",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/events.js",
+      "length": 6835,
+      "offset": 0,
+      "path": "events.js",
+      "hash": "e3664efa2a3c52aeca084c89c447c918d114cc3a",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/materializer.js",
+      "length": 9224,
+      "offset": 0,
+      "path": "materializer.js",
+      "hash": "301194ed93824ea63bb8fca92e3b4fcc03e4ba4b",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/render_tests.js",
+      "length": 23972,
+      "offset": 0,
+      "path": "render_tests.js",
+      "hash": "c3c6eb42fa1ab215a17ddc0f9ea88034da29dc16",
+      "fileOptions": {
+        "lazy": true
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/view_tests.js",
+      "length": 2458,
+      "offset": 0,
+      "path": "view_tests.js",
+      "hash": "93979ac0adf683d78e8a1256bf1ce569763a5eed",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

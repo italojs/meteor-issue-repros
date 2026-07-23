@@ -1,0 +1,28 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "modules",
+      "constraint": "0.20.0 || 0.20.1"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/main.js",
+      "length": 874,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "main.js",
+      "hash": "79eff7207e78b37f0272b12965a1539bf74ca4dd",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

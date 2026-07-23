@@ -1,0 +1,56 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "Tracker",
+      "testOnly": false
+    },
+    {
+      "name": "Deps",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    }
+  ],
+  "resources": [
+    {
+      "type": "asset",
+      "file": "web.browser/packages/tracker/tracker.d.ts",
+      "length": 6096,
+      "offset": 0,
+      "servePath": "/packages/tracker/tracker.d.ts",
+      "path": "tracker.d.ts",
+      "hash": "66ca99ff93722cbe9ee8bea7b7b8ad7050cdf170"
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/tracker.js",
+      "length": 21167,
+      "offset": 0,
+      "path": "tracker.js",
+      "hash": "6318fe1ad1410866a30f7e9180321e0dc6ff5db8",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/tracker_tests.js",
+      "length": 17406,
+      "offset": 0,
+      "path": "tracker_tests.js",
+      "hash": "67561141e53db2c2f9a9f756c8dcad380fb08303",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

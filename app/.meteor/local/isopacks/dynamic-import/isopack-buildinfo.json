@@ -1,0 +1,161 @@
+{
+  "builtBy": "meteor/34",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/package.js": "e8884d3905c0652c9eb54a6933f66f98390a70d1",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/package.js": "701afdba4f974ccdf8edcf6a9f1d38d6a8ae3ac3",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/package.js": "d3dafd72cc6e4cb24d096e5e9c9eeb8f1a07776d",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch/package.js": "eda748bf72b15fe6acae39a5cb8c0e9288643604",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/package.js": "0f17ed972002c1a20e124bd97b5cd63bc6f52bb4",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging/package.js": "303ea9b8a5b398cc813b92ac6733939655f69930",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/server.js": "bf57af47da109a98fc4bfaac7a9db67a65392aad",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/cache.js": "0368469afa83c8c92e0643cfaf0d52b1cd733cec",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/client.js": "6835a635498462839241258051187102584412a6",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/common.js": "3d4472440446fd92e4fcba378afdc250462e7fa2",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/dynamic-versions.js": "020f3a6df9791337f904fd2d68faf46f4167d2e9",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/security.js": "4343117e931e1f72a9f02749c9135e075a557157"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/server.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/cache.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/client.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/common.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/dynamic-versions.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/security.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "cache.js",
+            "client.js",
+            "common.js",
+            "dynamic-versions.js",
+            "package.js",
+            "security.js",
+            "server.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/package.js": "e8884d3905c0652c9eb54a6933f66f98390a70d1",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules/package.js": "701afdba4f974ccdf8edcf6a9f1d38d6a8ae3ac3",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise/package.js": "d3dafd72cc6e4cb24d096e5e9c9eeb8f1a07776d",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch/package.js": "eda748bf72b15fe6acae39a5cb8c0e9288643604",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/package.js": "0f17ed972002c1a20e124bd97b5cd63bc6f52bb4",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/client.js": "6835a635498462839241258051187102584412a6",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/cache.js": "0368469afa83c8c92e0643cfaf0d52b1cd733cec",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/common.js": "3d4472440446fd92e4fcba378afdc250462e7fa2",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/dynamic-versions.js": "020f3a6df9791337f904fd2d68faf46f4167d2e9",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/security.js": "4343117e931e1f72a9f02749c9135e075a557157",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/server.js": "bf57af47da109a98fc4bfaac7a9db67a65392aad"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/client.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/cache.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/common.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/dynamic-versions.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/security.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/server.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "cache.js",
+            "client.js",
+            "common.js",
+            "dynamic-versions.js",
+            "package.js",
+            "security.js",
+            "server.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import/package.js": "e8884d3905c0652c9eb54a6933f66f98390a70d1"
+    },
+    "potentiallyUnusedFiles": [],
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "dynamic-import": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/dynamic-import"
+    },
+    "meteor": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor"
+    },
+    "modules": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modules"
+    },
+    "promise": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/promise"
+    },
+    "fetch": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/fetch"
+    },
+    "modern-browsers": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers"
+    },
+    "inter-process-messaging": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/inter-process-messaging"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

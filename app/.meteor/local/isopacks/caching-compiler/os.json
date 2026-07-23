@@ -1,0 +1,51 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "CachingCompiler",
+      "testOnly": false
+    },
+    {
+      "name": "MultiFileCachingCompiler",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ecmascript"
+    },
+    {
+      "package": "random"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/caching-compiler.js",
+      "length": 13286,
+      "offset": 0,
+      "path": "caching-compiler.js",
+      "hash": "71ee0a59be55e3ff7f83b094fd3747b2dd943fa4",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/multi-file-caching-compiler.js",
+      "length": 9281,
+      "offset": 0,
+      "path": "multi-file-caching-compiler.js",
+      "hash": "53c86f7cc7d3c3c5e1f3f2960b1c8aea7f2457ec",
+      "fileOptions": {
+        "lazy": false
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

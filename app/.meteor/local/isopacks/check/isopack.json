@@ -1,0 +1,21 @@
+{
+  "isopack-2": {
+    "name": "check",
+    "summary": "Check whether a value matches a pattern",
+    "version": "1.5.0",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": []
+  }
+}

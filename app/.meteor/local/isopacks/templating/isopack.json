@@ -1,0 +1,21 @@
+{
+  "isopack-2": {
+    "name": "templating",
+    "summary": "Allows templates to be defined in .html files",
+    "version": "1.4.5",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": []
+  }
+}

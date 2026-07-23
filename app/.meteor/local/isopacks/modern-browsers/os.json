@@ -1,0 +1,50 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "modules"
+    }
+  ],
+  "resources": [
+    {
+      "type": "asset",
+      "file": "os/packages/modern-browsers/modern.d.ts",
+      "length": 418,
+      "offset": 0,
+      "servePath": "/packages/modern-browsers/modern.d.ts",
+      "path": "modern.d.ts",
+      "hash": "2412da9659356a94f4d866db31f6bb4df5d2e3f2"
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/modern.js",
+      "length": 8290,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "modern.js",
+      "hash": "d0d85dfa9fd149da8e1c21695967c38df4128f0f",
+      "fileOptions": {
+        "mainModule": true,
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/modern-tests.js",
+      "length": 1399,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "modern-tests.js",
+      "hash": "18cf6a5d1465a50903c45354b97bd46c4b1b5810",
+      "fileOptions": {
+        "lazy": true
+      }
+    }
+  ]
+}

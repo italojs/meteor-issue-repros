@@ -1,0 +1,250 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [
+    {
+      "name": "Meteor",
+      "testOnly": false
+    },
+    {
+      "name": "global",
+      "testOnly": false
+    },
+    {
+      "name": "meteorEnv",
+      "testOnly": false
+    }
+  ],
+  "uses": [
+    {
+      "package": "isobuild:compiler-plugin",
+      "constraint": "1.0.0"
+    },
+    {
+      "package": "core-runtime"
+    }
+  ],
+  "resources": [
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/global.js",
+      "length": 71,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "global.js",
+      "hash": "3dd95fbd9353c99881ca34e04acd370f6cfc5586",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/client_environment.js",
+      "length": 2548,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "client_environment.js",
+      "hash": "71c4a439c5de0cd1003ee161dbe260f3d7565899",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/helpers.js",
+      "length": 6404,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "helpers.js",
+      "hash": "882828ad3dfa5e262ff09ba26257a6d720219fce",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/setimmediate.js",
+      "length": 4223,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "setimmediate.js",
+      "hash": "8e17c7d4ae3622c215d875e970ad5d8eb67217d2",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/timers.js",
+      "length": 4240,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "timers.js",
+      "hash": "6ef58a232318d96812ea9418a2a107370e3323ab",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/errors.js",
+      "length": 3859,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "errors.js",
+      "hash": "3591b80cfa90fbabc2058d95aacaade99812546d",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/async_helpers.js",
+      "length": 860,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "async_helpers.js",
+      "hash": "c4a7fd012c9a5962bf5e4bde87d48bbcc17ba084",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/fiber_stubs_client.js",
+      "length": 2185,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "fiber_stubs_client.js",
+      "hash": "896cbd9b42d3d2a4960f08bb7970a5d4913929ea",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/asl-helpers-client.js",
+      "length": 383,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "asl-helpers-client.js",
+      "hash": "b02f0358aa60bb37f6288c571bec086c93b09dfd",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/startup_client.js",
+      "length": 2697,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "startup_client.js",
+      "hash": "08a3d7803f417b3660b8561e01a8cc71ba0432b7",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/debug.js",
+      "length": 2880,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "debug.js",
+      "hash": "a30161e87d3bbce91802b5912d949cf2b627e96f",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/deprecate.js",
+      "length": 2718,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "deprecate.js",
+      "hash": "f8f5cb13e5d737e35c6aa948d4e064efdbe6c4d4",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/string_utils.js",
+      "length": 276,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "string_utils.js",
+      "hash": "a7490b2a8276e63e4b0b0c4b91910a2a630e93bc",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/test_environment.js",
+      "length": 1851,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "test_environment.js",
+      "hash": "adc54b76e8d412f77b5d55a38bec6045045442f2",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/dynamics_browser.js",
+      "length": 2744,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "dynamics_browser.js",
+      "hash": "28186e2a1eee12bc61baab6f90e487d99c3d4c1b",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/url_common.js",
+      "length": 3052,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "url_common.js",
+      "hash": "721a8537c4b6310e5f19d07c4ea52f9d8c2127db",
+      "fileOptions": {
+        "lazy": false
+      }
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "web.browser/fetch.js",
+      "length": 862,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "fetch.js",
+      "hash": "e87d4097646f40ed1ec90007f6359cd8dc7ca7f0",
+      "fileOptions": {
+        "lazy": false
+      }
+    }
+  ],
+  "node_modules": "npm/node_modules"
+}

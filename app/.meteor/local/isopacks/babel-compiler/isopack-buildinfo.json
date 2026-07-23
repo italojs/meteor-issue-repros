@@ -1,0 +1,137 @@
+{
+  "builtBy": "meteor/34",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/package.js": "27510f678263b8fd7068ca5f7747ccd0f5da79f1",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime/package.js": "aacae883bf8b88dff062aeb8298bbe75fc9b9cd1",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/package.js": "0f17ed972002c1a20e124bd97b5cd63bc6f52bb4",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client/package.js": "583148f8cfe481d30f3ae8d22febed2b7b0f9f57",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server/package.js": "39ac42ca5d36877b9806a05de9044b548bdb1573",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/.npm/package/npm-shrinkwrap.json": "fb09452533439e99bdc0fa39f20e56788020ccf2",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/babel.js": "faa5a33ab3dac3bda0b0b280a5891a4a0c8f2c2b",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/babel-compiler.js": "24dd8e833bc4c9e34898a1069409cdbb1f0a8f18",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/versions.js": "5b7f29405e55a51ddb65c6f2fa2ed318b5e28f0a"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/babel.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/babel-compiler.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/versions.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "babel-compiler.js",
+            "babel.js",
+            "package.js",
+            "versions.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/package.js": "27510f678263b8fd7068ca5f7747ccd0f5da79f1",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/package.js": "0e95cc0e62013bf533154b49988e0d55c1f491b0",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor/plugin/basic-file-types.js": "a84e1d4f3546a61a5c3b968212fd3fe674fd8800",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers/package.js": "0f17ed972002c1a20e124bd97b5cd63bc6f52bb4",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/.npm/package/npm-shrinkwrap.json": "fb09452533439e99bdc0fa39f20e56788020ccf2",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/babel-compiler.js": "24dd8e833bc4c9e34898a1069409cdbb1f0a8f18",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/babel.js": "faa5a33ab3dac3bda0b0b280a5891a4a0c8f2c2b",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/versions.js": "5b7f29405e55a51ddb65c6f2fa2ed318b5e28f0a"
+      },
+      "potentiallyUnusedFiles": [
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/babel-compiler.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/babel.js",
+        "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/versions.js"
+      ],
+      "directories": [
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "names": [
+            ".meteorignore"
+          ],
+          "contents": [
+            "babel-compiler.js",
+            "babel.js",
+            "package.js",
+            "versions.js"
+          ]
+        },
+        {
+          "absPath": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^\\."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler/package.js": "27510f678263b8fd7068ca5f7747ccd0f5da79f1"
+    },
+    "potentiallyUnusedFiles": [],
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "babel-compiler": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/babel-compiler"
+    },
+    "meteor": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/meteor"
+    },
+    "ecmascript-runtime": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime"
+    },
+    "modern-browsers": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/modern-browsers"
+    },
+    "ecmascript-runtime-client": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-client"
+    },
+    "ecmascript-runtime-server": {
+      "kind": "local",
+      "sourceRoot": "/Users/italojose/dev/meteor-dev/meteor-source/packages/ecmascript-runtime-server"
+    }
+  },
+  "includeCordovaUnibuild": false
+}

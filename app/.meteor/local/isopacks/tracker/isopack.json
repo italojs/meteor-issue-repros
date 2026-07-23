@@ -1,0 +1,21 @@
+{
+  "isopack-2": {
+    "name": "tracker",
+    "summary": "Dependency tracker to allow reactive callbacks",
+    "version": "1.3.4",
+    "isTest": false,
+    "builds": [
+      {
+        "kind": "main",
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "kind": "main",
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      }
+    ],
+    "plugins": []
+  }
+}
