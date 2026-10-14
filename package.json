@@ -1,0 +1,11 @@
+{
+  "name": "meteor-issue-14397-repro",
+  "private": true,
+  "description": "Reproduce Meteor issue #14397 and verify the fix in 3.6-rc.0",
+  "scripts": {
+    "check": "node scripts/browser-check.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

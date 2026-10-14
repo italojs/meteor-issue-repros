@@ -1,0 +1,98 @@
+[
+  {
+    "name": "chrome",
+    "requestedUserAgent": "Chromium default",
+    "errors": [],
+    "console": [
+      {
+        "type": "log",
+        "text": "tagged template literal"
+      }
+    ],
+    "failedRequests": [],
+    "httpStatus": 200,
+    "actualUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+    "release": "METEOR@3.6-rc.0",
+    "isModern": true,
+    "reproResult": "tagged template literal",
+    "renderedText": "Welcome to Meteor!\nClick Me\n\nYou've pressed the button 0 times.\n\nLoading...",
+    "scriptUrls": [
+      "http://127.0.0.1:3373/a5afbd72906726ba9623f8cca76a7a911d7b1a55.js?meteor_js_resource=true"
+    ],
+    "expectedRelease": "METEOR@3.6-rc.0",
+    "expectedIsModern": true,
+    "pass": true
+  },
+  {
+    "name": "example",
+    "requestedUserAgent": "example",
+    "errors": [],
+    "console": [
+      {
+        "type": "log",
+        "text": "tagged template literal"
+      }
+    ],
+    "failedRequests": [],
+    "httpStatus": 200,
+    "actualUserAgent": "example",
+    "release": "METEOR@3.6-rc.0",
+    "isModern": false,
+    "reproResult": "tagged template literal",
+    "renderedText": "Welcome to Meteor!\nClick Me\n\nYou've pressed the button 0 times.\n\nLearn Meteor!\nDo the Tutorial\nFollow the Guide\nRead the Docs\nDiscussions\nJoin us on Discord\nDeploying in Galaxy",
+    "scriptUrls": [
+      "http://127.0.0.1:3373/8716e63958ab528939e5d9a4041b2855b6a63528.js?meteor_js_resource=true"
+    ],
+    "expectedRelease": "METEOR@3.6-rc.0",
+    "expectedIsModern": false,
+    "pass": true
+  },
+  {
+    "name": "ie11",
+    "requestedUserAgent": "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko",
+    "errors": [],
+    "console": [
+      {
+        "type": "log",
+        "text": "tagged template literal"
+      }
+    ],
+    "failedRequests": [],
+    "httpStatus": 200,
+    "actualUserAgent": "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko",
+    "release": "METEOR@3.6-rc.0",
+    "isModern": false,
+    "reproResult": "tagged template literal",
+    "renderedText": "Welcome to Meteor!\nClick Me\n\nYou've pressed the button 0 times.\n\nLoading...",
+    "scriptUrls": [
+      "http://127.0.0.1:3373/8716e63958ab528939e5d9a4041b2855b6a63528.js?meteor_js_resource=true"
+    ],
+    "expectedRelease": "METEOR@3.6-rc.0",
+    "expectedIsModern": false,
+    "pass": true
+  },
+  {
+    "name": "googlebot",
+    "requestedUserAgent": "Googlebot",
+    "errors": [],
+    "console": [
+      {
+        "type": "log",
+        "text": "tagged template literal"
+      }
+    ],
+    "failedRequests": [],
+    "httpStatus": 200,
+    "actualUserAgent": "Googlebot",
+    "release": "METEOR@3.6-rc.0",
+    "isModern": false,
+    "reproResult": "tagged template literal",
+    "renderedText": "Welcome to Meteor!\nClick Me\n\nYou've pressed the button 0 times.\n\nLoading...",
+    "scriptUrls": [
+      "http://127.0.0.1:3373/8716e63958ab528939e5d9a4041b2855b6a63528.js?meteor_js_resource=true"
+    ],
+    "expectedRelease": "METEOR@3.6-rc.0",
+    "expectedIsModern": false,
+    "pass": true
+  }
+]

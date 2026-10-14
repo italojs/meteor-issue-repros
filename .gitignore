@@ -1,0 +1,8 @@
+node_modules/
+artifacts/
+_build/
+**/build-assets*/
+**/build-chunks*/
+.rsdoctor/
+.DS_Store
+**/.meteor/.id

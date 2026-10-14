@@ -1,37 +1,145 @@
-# meteor-issue-repros
+# Meteor #14397: legacy SWC helpers — fixed in 3.6-rc.0
 
-Reproduções mínimas de issues do [meteor/meteor](https://github.com/meteor/meteor).
+This demo reproduces [meteor/meteor#14397](https://github.com/meteor/meteor/issues/14397) on **Meteor 3.5.2** and verifies the same scenario on the published **Meteor 3.6-rc.0** release.
 
-**Uma branch por issue** — `issue-<num>`. A `main` é só este índice.
+Both apps are unmodified React scaffolds apart from this reproduction appended to `client/main.jsx`:
 
-| Issue | Branch | PR |
-|-------|--------|----|
-| [#13489](https://github.com/meteor/meteor/issues/13489) — `Meteor.settings.public` runtime updates not sent to new clients | [`issue-13489`](https://github.com/italojs/meteor-issue-repros/tree/issue-13489) | [italojs/meteor-italo-private#20](https://github.com/italojs/meteor-italo-private/pull/20) |
-| [#13490](https://github.com/meteor/meteor/issues/13490) — SIGTERM listener leaks dev server instances | [`issue-13490`](https://github.com/italojs/meteor-issue-repros/tree/issue-13490) | [italojs/meteor-italo-private#21](https://github.com/italojs/meteor-italo-private/pull/21) |
-| [#12759](https://github.com/meteor/meteor/issues/12759) — client leaks a global `require` | [`issue-12759`](https://github.com/italojs/meteor-issue-repros/tree/issue-12759) | [italojs/meteor-italo-private#22](https://github.com/italojs/meteor-italo-private/pull/22) |
-| [#12718](https://github.com/meteor/meteor/issues/12718) — extensionless import resolves `.css` over `.tsx` | [`issue-12718`](https://github.com/italojs/meteor-issue-repros/tree/issue-12718) | [italojs/meteor-italo-private#23](https://github.com/italojs/meteor-italo-private/pull/23) |
-| [#13245](https://github.com/meteor/meteor/issues/13245) — minify stats parse failure aborts the production build | [`issue-13245`](https://github.com/italojs/meteor-issue-repros/tree/issue-13245) | [italojs/meteor-italo-private#24](https://github.com/italojs/meteor-italo-private/pull/24) |
-| [#12164](https://github.com/meteor/meteor/issues/12164) — wrong error importing a missing file from an installed package | [`issue-12164`](https://github.com/italojs/meteor-issue-repros/tree/issue-12164) | [italojs/meteor-italo-private#25](https://github.com/italojs/meteor-italo-private/pull/25) |
-| [#12029](https://github.com/meteor/meteor/issues/12029) — native driver ObjectId unusable on the client | [`issue-12029`](https://github.com/italojs/meteor-issue-repros/tree/issue-12029) | [italojs/meteor-italo-private#26](https://github.com/italojs/meteor-italo-private/pull/26) |
-| [#12688](https://github.com/meteor/meteor/issues/12688) — positional (`$`) projection crashes change-stream subscription | [`issue-12688`](https://github.com/italojs/meteor-issue-repros/tree/issue-12688) | [italojs/meteor-italo-private#27](https://github.com/italojs/meteor-italo-private/pull/27) |
-| [#12172](https://github.com/meteor/meteor/issues/12172) — installer creates `~/.bash_profile`, shadowing `~/.profile` | [`issue-12172`](https://github.com/italojs/meteor-issue-repros/tree/issue-12172) | [italojs/meteor-italo-private#28](https://github.com/italojs/meteor-italo-private/pull/28) |
-| [#13276](https://github.com/meteor/meteor/issues/13276) — build crashes (`ERR_FS_FILE_TOO_LARGE`) on >2 GiB bundle files | [`issue-13276`](https://github.com/italojs/meteor-issue-repros/tree/issue-13276) | [italojs/meteor-italo-private#29](https://github.com/italojs/meteor-italo-private/pull/29) |
-| [#12421](https://github.com/meteor/meteor/issues/12421) — iOS Safari version parsed from Safari token → wrong legacy bundle | [`issue-12421`](https://github.com/italojs/meteor-issue-repros/tree/issue-12421) | [italojs/meteor-italo-private#30](https://github.com/italojs/meteor-italo-private/pull/30) |
+```js
+const tag = (strings) => strings[0];
+console.log(tag`tagged template literal`);
+window.__issue14397 = tag`tagged template literal`;
+```
 
-- [#11918](https://github.com/meteor/meteor/issues/11918) — RangeError reading unibuild resource at offset — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-11918) — PR italojs/meteor-italo-private#42
+No `externalHelpers: false` workaround or legacy-only custom entry point is used. `@swc/helpers` remains installed. The `window` assignment exposes the result for verification.
 
-- [#12772](https://github.com/meteor/meteor/issues/12772) — no Content-Length on built JS/CSS — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-12772) — PR italojs/meteor-italo-private#43
+| Published release | Modern Chrome | Legacy bundle selected by `example`, IE11 UA, or `Googlebot` |
+| --- | --- | --- |
+| 3.5.2 | App renders | Blank page; missing `_tagged_template_literal` helper |
+| 3.6-rc.0, production simulation | App renders | App renders; no JavaScript errors |
+| 3.6-rc.0, deployment bundle | App renders | App renders; no JavaScript errors |
 
-- [#13653](https://github.com/meteor/meteor/issues/13653) — infinite reload loop with cross-origin DDP_DEFAULT_CONNECTION_URL — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-13653) — PR italojs/meteor-italo-private#44
+## Get the demo
 
-- [#11808](https://github.com/meteor/meteor/issues/11808) — installer should repair PATH when already installed — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-11808) — PR italojs/meteor-italo-private#45
+Install the Meteor CLI before running these commands. Each app's `.meteor/release` selects its published release; Meteor downloads the tool and packages if needed.
 
-- [#14594](https://github.com/meteor/meteor/issues/14594) — Invalid URL crashes the server via the SockJS transport — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-14594) — upstream PR meteor/meteor#14598 (private #46)
+```sh
+git clone --branch codex/issue-14397 https://github.com/italojs/meteor-issue-repros.git
+cd meteor-issue-repros
+```
 
-- [#14604](https://github.com/meteor/meteor/issues/14604) — change-stream observe driver stuck in an infinite restart loop after ChangeStreamHistoryLost (error 286) — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-14604) — PR italojs/meteor-italo-private#48
+## Verify the fixed release manually
 
-- [#14600](https://github.com/meteor/meteor/issues/14600) — change-stream fence test CI regression on release-3.5.1 (compareOperationTimes mishandles a plain `{t,i}` operand, exposed by #14564's caught-up-floor seed) — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-14600) — PR italojs/meteor-italo-private#49
+In the first terminal:
 
-- [#14654](https://github.com/meteor/meteor/issues/14654) — accounts-base mounts /_accounts/cookie/* unconditionally + unbounded body on /set — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-14654) — upstream PR meteor/meteor#14657 (private #50)
+```sh
+cd apps/meteor-3.6-rc.0
+meteor npm ci
+RSPACK_DEVSERVER_PORT=18370 meteor run --production --exclude-archs web.cordova --port 3370
+```
 
-- [#14400](https://github.com/meteor/meteor/issues/14400) — npm-mongo wrapper leaks full MONGO_URL (credentials) to stderr on startup pre-check — [repro](https://github.com/italojs/meteor-issue-repros/tree/issue-14400) — upstream PR meteor/meteor#14658 (private #51)
+1. Open <http://localhost:3370> in Chrome. The page should display **Welcome to Meteor!** and the counter should work.
+2. Open DevTools, then **More tools → Network conditions**.
+3. Under **User agent**, disable **Use browser default** and enter `example`.
+4. Reload. The page should still render, without a missing-helper error.
+5. Evaluate this in the console:
+
+```js
+({
+  release: Meteor.release,
+  isModern: __meteor_runtime_config__.isModern,
+  result: window.__issue14397,
+})
+```
+
+Expected:
+
+```js
+{
+  release: "METEOR@3.6-rc.0",
+  isModern: false,
+  result: "tagged template literal"
+}
+```
+
+`isModern: false` confirms that the legacy bundle really loaded. Repeat with `Googlebot` or this IE11 user agent:
+
+```text
+Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+```
+
+The run option `--exclude-archs web.cordova` takes precedence over the modern-only development setting and ensures that the legacy program is built for this reproduction.
+
+## Compare with the broken release
+
+From the repository root, in a separate terminal:
+
+```sh
+cd apps/meteor-3.5.2
+meteor npm ci
+RSPACK_DEVSERVER_PORT=18380 meteor run --production --exclude-archs web.cordova --port 3380
+```
+
+Open <http://localhost:3380>, repeat the user-agent steps, and observe:
+
+```text
+Cannot find module '@swc/helpers/_/_tagged_template_literal'
+```
+
+Default modern Chrome renders the same app successfully. With `example`, the legacy program returns HTTP 200 but the React target is blank. The original control was repeated twice with identical results.
+
+## Automated browser checks
+
+Keep the servers running. From the repository root:
+
+```sh
+npm ci
+npx playwright install chromium
+npm run check -- http://127.0.0.1:3370 fixed-release
+```
+
+The check opens fresh Chromium contexts for the default user agent, `example`, IE11, and `Googlebot`. It requires `METEOR@3.6-rc.0`, the correct modern/legacy architecture, successful execution, a rendered page, and no page errors. JSON results and screenshots are saved under `artifacts/`. **Expected exit code: 0.**
+
+To reproduce the old failure:
+
+```sh
+EXPECTED_RELEASE=METEOR@3.5.2 npm run check -- http://127.0.0.1:3380 broken-control
+```
+
+**Expected exit code: 1**, because the three legacy cases fail. The modern case must pass. `pass` in the JSON means the app booted; it does not mean a failure was successfully reproduced.
+
+## Verify a deployment bundle
+
+The RC was also verified after `meteor build`, not just with `run --production`.
+
+Keep the RC server on port 3370 running so its disposable MongoDB remains available on port 3371. From another terminal at the repository root:
+
+```sh
+cd apps/meteor-3.6-rc.0
+meteor build --directory ../../artifacts/deploy
+METEOR_NODE="$(meteor node -p 'process.execPath')"
+METEOR_BIN="$(dirname "$METEOR_NODE")"
+(
+  cd ../../artifacts/deploy/bundle/programs/server
+  PATH="$METEOR_BIN:$PATH" "$METEOR_BIN/npm" install --omit=dev
+)
+(
+  cd ../../artifacts/deploy/bundle
+  PORT=3373 ROOT_URL=http://127.0.0.1:3373 MONGO_URL=mongodb://127.0.0.1:3371/meteor "$METEOR_NODE" main.js
+)
+```
+
+This uses the RC's Node 26 runtime. In another terminal at the repository root:
+
+```sh
+npm run check -- http://127.0.0.1:3373 built-release
+```
+
+**Expected exit code: 0.** The bundle's `star.json` must include both `web.browser` and `web.browser.legacy`. `meteor build` does not accept `--exclude-archs`; the command above omits that run-only option.
+
+Stop all servers with Ctrl+C when finished.
+
+## Evidence and scope
+
+See [REPORT.md](REPORT.md) for versions, results, and the source changes shipped in the RC. [Original validation evidence](evidence/original-validation/) contains JSON and screenshots captured before packaging. [ISSUE-COMMENT.md](ISSUE-COMMENT.md) is a ready-to-post comment.
+
+These checks use Chromium with overridden user agents to exercise Meteor's legacy bundle selection. They do **not** establish actual IE11-engine compatibility, nor was a Galaxy deployment performed. The concrete missing-helper reproduction works in the published 3.6-rc.0 release.
