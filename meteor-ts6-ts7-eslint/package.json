@@ -1,0 +1,51 @@
+{
+  "name": "meteor-ts6-ts7-demo",
+  "private": true,
+  "scripts": {
+    "start": "meteor run --port 127.0.0.1:3360",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer",
+    "tsc6": "node node_modules/typescript/bin/tsc6",
+    "tsc7": "node node_modules/@typescript/native/bin/tsc",
+    "typecheck:ts6": "npm run tsc6 -- --noEmit",
+    "typecheck:ts7": "npm run tsc7 -- --noEmit",
+    "lint:typescript": "npm run typecheck:ts7",
+    "lint": "eslint client imports server tests rspack.config.ts swc.config.ts --max-warnings=0"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.29.10",
+    "@swc/helpers": "0.5.23",
+    "meteor-node-stubs": "1.2.30",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@meteorjs/rspack": "3.0.0-rc.0",
+    "@rsdoctor/rspack-plugin": "1.6.5",
+    "@rspack/cli": "2.2.9",
+    "@rspack/core": "2.2.9",
+    "@rspack/dev-server": "2.2.1",
+    "@rspack/plugin-react-refresh": "2.0.2",
+    "@swc/core": "1.16.18",
+    "@types/meteor": "2.9.11",
+    "@types/mocha": "8.2.3",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@typescript/native": "npm:typescript@7.0.2",
+    "eslint": "10.12.0",
+    "react-refresh": "0.19.0",
+    "ts-checker-rspack-plugin": "1.7.1",
+    "typescript": "npm:@typescript/typescript6@6.0.2",
+    "typescript-eslint": "8.70.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.tsx",
+      "server": "server/main.ts"
+    },
+    "testModule": "tests/main.ts",
+    "modern": true
+  }
+}

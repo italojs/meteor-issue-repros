@@ -1,0 +1,29 @@
+import { defineConfig } from "@meteorjs/rspack";
+import { TsCheckerRspackPlugin } from "ts-checker-rspack-plugin";
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
+
+/**
+ * Rspack configuration for Meteor projects.
+ *
+ * Provides typed flags on the `Meteor` object, such as:
+ * - `Meteor.isClient` / `Meteor.isServer`
+ * - `Meteor.isDevelopment` / `Meteor.isProduction`
+ * - …and other flags available
+ *
+ * Use these flags to adjust your build settings based on environment.
+ */
+export default defineConfig((/* Meteor */) => {
+  return {
+    devServer: { host: "127.0.0.1" },
+    plugins: [
+      new TsCheckerRspackPlugin({
+        typescript: {
+          tsgo: true,
+          typescriptPath: require.resolve("@typescript/native/package.json"),
+        },
+      }),
+    ],
+  };
+});

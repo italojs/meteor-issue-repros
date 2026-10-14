@@ -1,0 +1,18 @@
+node_modules/
+
+# Meteor Modern-Tools build context directories
+_build
+*/build-assets
+*/build-chunks
+.rsdoctor
+
+# Meteor Modern-Tools build context directories
+*/build-assets*
+*/build-chunks*
+
+# Generated local typecheck and package-manager files
+*.tsbuildinfo
+.npm-cache/
+.meteor-warehouse/
+.env
+.env.*

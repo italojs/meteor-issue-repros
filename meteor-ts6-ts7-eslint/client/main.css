@@ -1,0 +1,5 @@
+body { margin: 0; font: 17px/1.6 system-ui, sans-serif; background: #f4f6f9; color: #192536; }
+.demo { max-width: 850px; margin: 7vh auto; padding: 38px; background: white; border: 3px solid #355caa; border-radius: 12px; }
+h1 { line-height: 1.15; }
+button { font: inherit; padding: 12px 20px; background: #355caa; color: white; border: 0; border-radius: 7px; cursor: pointer; }
+#document-id, #server-status { font: 14px/1.8 monospace; overflow-wrap: anywhere; }
